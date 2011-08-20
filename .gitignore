@@ -1,0 +1,37 @@
+#ignore thumbnails created by windows
+Thumbs.db
+#ignore vim swap file
+.*.swp
+#ignore Desktop Service Store files created by mac
+*.DS_Store
+#Ignore files build by Visual Studio
+*.obj
+*.exe
+*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.sdf
+*.cache
+*.ilk
+*.log
+[Bb]in
+[Dd]ebug*/
+*.lib
+*.sbr
+obj/
+[Rr]elease*/
+_ReSharper*/
+[Tt]est[Rr]esult*
+_build
+build
+*.mode1v3
+*.pbxuser
