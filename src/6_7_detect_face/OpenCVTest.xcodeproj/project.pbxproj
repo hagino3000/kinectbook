@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		160CCADE13A7CAA3009B3573 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 160CCADD13A7CAA3009B3573 /* ApplicationServices.framework */; };
-		160CCC8713A7CC48009B3573 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 160CCC8613A7CC48009B3573 /* CoreServices.framework */; };
 		16B30B8C13B79B850054693B /* libopencv_objdetect.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B30B8B13B79B850054693B /* libopencv_objdetect.dylib */; };
 		16B8469A139714F700439CAB /* libopencv_core.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B84699139714F700439CAB /* libopencv_core.dylib */; };
 		16B8469C1397151100439CAB /* libopencv_highgui.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B8469B1397151100439CAB /* libopencv_highgui.dylib */; };
@@ -30,8 +28,6 @@
 
 /* Begin PBXFileReference section */
 		08FB7796FE84155DC02AAC07 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		160CCADD13A7CAA3009B3573 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
-		160CCC8613A7CC48009B3573 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		16B30B8B13B79B850054693B /* libopencv_objdetect.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_objdetect.dylib; path = /opt/local/lib/libopencv_objdetect.dylib; sourceTree = "<absolute>"; };
 		16B84699139714F700439CAB /* libopencv_core.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_core.dylib; path = /opt/local/lib/libopencv_core.dylib; sourceTree = "<absolute>"; };
 		16B8469B1397151100439CAB /* libopencv_highgui.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_highgui.dylib; path = /opt/local/lib/libopencv_highgui.dylib; sourceTree = "<absolute>"; };
@@ -47,8 +43,6 @@
 				16B8469A139714F700439CAB /* libopencv_core.dylib in Frameworks */,
 				16B8469C1397151100439CAB /* libopencv_highgui.dylib in Frameworks */,
 				16B846A01397155500439CAB /* libopencv_imgproc.dylib in Frameworks */,
-				160CCADE13A7CAA3009B3573 /* ApplicationServices.framework in Frameworks */,
-				160CCC8713A7CC48009B3573 /* CoreServices.framework in Frameworks */,
 				16B30B8C13B79B850054693B /* libopencv_objdetect.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,8 +54,6 @@
 			isa = PBXGroup;
 			children = (
 				160CCD7913A7CE69009B3573 /* lib */,
-				160CCD7813A7CE58009B3573 /* framework */,
-				16BA50581362C12000A3345A /* Data */,
 				08FB7795FE84155DC02AAC07 /* Source */,
 				C6859E8C029090F304C91782 /* Documentation */,
 				1AB674ADFE9D54B511CA2CBB /* Products */,
@@ -77,15 +69,6 @@
 			name = Source;
 			sourceTree = "<group>";
 		};
-		160CCD7813A7CE58009B3573 /* framework */ = {
-			isa = PBXGroup;
-			children = (
-				160CCADD13A7CAA3009B3573 /* ApplicationServices.framework */,
-				160CCC8613A7CC48009B3573 /* CoreServices.framework */,
-			);
-			name = framework;
-			sourceTree = "<group>";
-		};
 		160CCD7913A7CE69009B3573 /* lib */ = {
 			isa = PBXGroup;
 			children = (
@@ -95,13 +78,6 @@
 				16B84699139714F700439CAB /* libopencv_core.dylib */,
 			);
 			name = lib;
-			sourceTree = "<group>";
-		};
-		16BA50581362C12000A3345A /* Data */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Data;
 			sourceTree = "<group>";
 		};
 		1AB674ADFE9D54B511CA2CBB /* Products */ = {
