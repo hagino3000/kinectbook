@@ -1,0 +1,14 @@
+<OpenNI>
+    <Licenses></Licenses>
+    <Log writeToConsole="true" writeToFile="false">
+        <LogLevel value="2"/>
+        <Masks>
+            <Mask name="ALL" on="true"/>
+        </Masks>
+        <Dumps></Dumps>
+    </Log>
+    <ProductionNodes>
+        <Node type="Depth" name="Depth1" stopOnError="false" />
+        <Node type="User" />
+    </ProductionNodes>
+</OpenNI>

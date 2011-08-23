@@ -1,0 +1,23 @@
+<OpenNI>
+    <Licenses>
+        <!-- Add licenses here 
+        <License vendor="vendor" key="key"/>
+        -->
+    </Licenses>
+    <Log writeToConsole="false" writeToFile="false">
+        <!-- 0 - Verbose, 1 - Info, 2 - Warning, 3 - Error (default) -->
+        <LogLevel value="3"/>
+        <Masks>
+            <Mask name="ALL" on="true"/>
+        </Masks>
+        <Dumps>
+        </Dumps>
+    </Log>
+    <ProductionNodes>
+        <Node type="Image" name="Image1" stopOnError="false">
+            <Configuration>
+                <Mirror on="true"/>
+            </Configuration>
+        </Node>
+    </ProductionNodes>
+</OpenNI>
