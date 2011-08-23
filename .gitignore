@@ -35,3 +35,5 @@ _build
 build
 *.mode1v3
 *.pbxuser
+project.xcworkspace
+xcuserdata
