@@ -4,7 +4,8 @@ Kinect Hackers Manual Support Page
 
 現在は次のOSで動作確認を行なっています。
 
-- MacOS X 10.6 (Snow leoperd) + Xcode 3.2.5
+- MacOS X 10.6 (Snow leoperd) + Xcode3.2.5
+- MacOS X 10.7 (lion) + Xcode4.1
 - Windows 7 (32bit)
 
 .. note::
