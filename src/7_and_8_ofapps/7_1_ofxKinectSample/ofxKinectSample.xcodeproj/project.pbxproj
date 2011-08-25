@@ -7,15 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		160CC83013A3F379009B3573 /* cameras.c in Sources */ = {isa = PBXBuildFile; fileRef = 160CC81213A3F379009B3573 /* cameras.c */; };
-		160CC83113A3F379009B3573 /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = 160CC81313A3F379009B3573 /* core.c */; };
-		160CC83213A3F379009B3573 /* tilt.c in Sources */ = {isa = PBXBuildFile; fileRef = 160CC81813A3F379009B3573 /* tilt.c */; };
-		160CC83313A3F379009B3573 /* usb_libusb10.c in Sources */ = {isa = PBXBuildFile; fileRef = 160CC81913A3F379009B3573 /* usb_libusb10.c */; };
-		160CC83413A3F379009B3573 /* usb-1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 160CC82113A3F379009B3573 /* usb-1.0.a */; };
-		160CC83513A3F379009B3573 /* ofxKinect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 160CC82513A3F379009B3573 /* ofxKinect.cpp */; };
-		160CC83613A3F379009B3573 /* ofxKinectCalibration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 160CC82713A3F379009B3573 /* ofxKinectCalibration.cpp */; };
-		160CC83713A3F379009B3573 /* ofxKinectPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 160CC82913A3F379009B3573 /* ofxKinectPlayer.cpp */; };
-		160CC83813A3F379009B3573 /* ofxKinectRecorder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 160CC82B13A3F379009B3573 /* ofxKinectRecorder.cpp */; };
 		160CC85613A3F3BC009B3573 /* ofxThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 160CC85413A3F3BC009B3573 /* ofxThread.cpp */; };
 		160CC88013A3F3CD009B3573 /* openCV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 160CC86E13A3F3CD009B3573 /* openCV.a */; };
 		160CC88113A3F3CD009B3573 /* ofxCvColorImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 160CC87113A3F3CD009B3573 /* ofxCvColorImage.cpp */; };
@@ -27,6 +18,15 @@
 		160CC89713A3F3DA009B3573 /* ofxMatrix3x3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 160CC88A13A3F3DA009B3573 /* ofxMatrix3x3.cpp */; };
 		160CC89813A3F3DA009B3573 /* ofxMatrix4x4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 160CC88C13A3F3DA009B3573 /* ofxMatrix4x4.cpp */; };
 		160CC89913A3F3DA009B3573 /* ofxQuaternion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 160CC89113A3F3DA009B3573 /* ofxQuaternion.cpp */; };
+		1621D3231406C47B00F7069B /* cameras.c in Sources */ = {isa = PBXBuildFile; fileRef = 1621D3091406C47A00F7069B /* cameras.c */; };
+		1621D3241406C47B00F7069B /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = 1621D30A1406C47A00F7069B /* core.c */; };
+		1621D3251406C47B00F7069B /* tilt.c in Sources */ = {isa = PBXBuildFile; fileRef = 1621D30F1406C47A00F7069B /* tilt.c */; };
+		1621D3261406C47B00F7069B /* usb_libusb10.c in Sources */ = {isa = PBXBuildFile; fileRef = 1621D3101406C47A00F7069B /* usb_libusb10.c */; };
+		1621D3271406C47B00F7069B /* usb-1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1621D3181406C47A00F7069B /* usb-1.0.a */; };
+		1621D3281406C47B00F7069B /* ofxKinect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1621D31B1406C47A00F7069B /* ofxKinect.cpp */; };
+		1621D3291406C47B00F7069B /* ofxKinectCalibration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1621D31D1406C47A00F7069B /* ofxKinectCalibration.cpp */; };
+		1621D32A1406C47B00F7069B /* ofxKinectPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1621D31F1406C47A00F7069B /* ofxKinectPlayer.cpp */; };
+		1621D32B1406C47B00F7069B /* ofxKinectRecorder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1621D3211406C47A00F7069B /* ofxKinectRecorder.cpp */; };
 		E45BE0AA0E8CC67C009D7055 /* GLee.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE0A90E8CC67C009D7055 /* GLee.a */; };
 		E45BE2E40E8CC69C009D7055 /* rtAudio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE2E30E8CC69C009D7055 /* rtAudio.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
@@ -98,26 +98,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		160CC81213A3F379009B3573 /* cameras.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cameras.c; sourceTree = "<group>"; };
-		160CC81313A3F379009B3573 /* core.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = core.c; sourceTree = "<group>"; };
-		160CC81413A3F379009B3573 /* freenect_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = freenect_internal.h; sourceTree = "<group>"; };
-		160CC81513A3F379009B3573 /* libfreenect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libfreenect.h; sourceTree = "<group>"; };
-		160CC81613A3F379009B3573 /* libfreenect.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = libfreenect.hpp; sourceTree = "<group>"; };
-		160CC81713A3F379009B3573 /* libfreenect.pc.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libfreenect.pc.in; sourceTree = "<group>"; };
-		160CC81813A3F379009B3573 /* tilt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tilt.c; sourceTree = "<group>"; };
-		160CC81913A3F379009B3573 /* usb_libusb10.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = usb_libusb10.c; sourceTree = "<group>"; };
-		160CC81A13A3F379009B3573 /* usb_libusb10.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = usb_libusb10.h; sourceTree = "<group>"; };
-		160CC81F13A3F379009B3573 /* libusb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libusb.h; sourceTree = "<group>"; };
-		160CC82113A3F379009B3573 /* usb-1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "usb-1.0.a"; sourceTree = "<group>"; };
-		160CC82413A3F379009B3573 /* ofxBase3DVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxBase3DVideo.h; sourceTree = "<group>"; };
-		160CC82513A3F379009B3573 /* ofxKinect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxKinect.cpp; sourceTree = "<group>"; };
-		160CC82613A3F379009B3573 /* ofxKinect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxKinect.h; sourceTree = "<group>"; };
-		160CC82713A3F379009B3573 /* ofxKinectCalibration.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxKinectCalibration.cpp; sourceTree = "<group>"; };
-		160CC82813A3F379009B3573 /* ofxKinectCalibration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxKinectCalibration.h; sourceTree = "<group>"; };
-		160CC82913A3F379009B3573 /* ofxKinectPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxKinectPlayer.cpp; sourceTree = "<group>"; };
-		160CC82A13A3F379009B3573 /* ofxKinectPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxKinectPlayer.h; sourceTree = "<group>"; };
-		160CC82B13A3F379009B3573 /* ofxKinectRecorder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxKinectRecorder.cpp; sourceTree = "<group>"; };
-		160CC82C13A3F379009B3573 /* ofxKinectRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxKinectRecorder.h; sourceTree = "<group>"; };
 		160CC85113A3F3BC009B3573 /* Instructions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Instructions.txt; path = /Users/takashi/dev/lib/openFrameworks/addons/ofxThread/docs/Instructions.txt; sourceTree = "<absolute>"; };
 		160CC85213A3F3BC009B3573 /* install.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = install.xml; path = /Users/takashi/dev/lib/openFrameworks/addons/ofxThread/install.xml; sourceTree = "<absolute>"; };
 		160CC85413A3F3BC009B3573 /* ofxThread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxThread.cpp; path = /Users/takashi/dev/lib/openFrameworks/addons/ofxThread/src/ofxThread.cpp; sourceTree = "<absolute>"; };
@@ -170,6 +150,26 @@
 		160CC89413A3F3DA009B3573 /* ofxVec3f.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxVec3f.h; path = /Users/takashi/dev/lib/openFrameworks/addons/ofxVectorMath/src/ofxVec3f.h; sourceTree = "<absolute>"; };
 		160CC89513A3F3DA009B3573 /* ofxVec4f.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxVec4f.h; path = /Users/takashi/dev/lib/openFrameworks/addons/ofxVectorMath/src/ofxVec4f.h; sourceTree = "<absolute>"; };
 		160CC89613A3F3DA009B3573 /* ofxVectorMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxVectorMath.h; path = /Users/takashi/dev/lib/openFrameworks/addons/ofxVectorMath/src/ofxVectorMath.h; sourceTree = "<absolute>"; };
+		1621D3091406C47A00F7069B /* cameras.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cameras.c; sourceTree = "<group>"; };
+		1621D30A1406C47A00F7069B /* core.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = core.c; sourceTree = "<group>"; };
+		1621D30B1406C47A00F7069B /* freenect_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = freenect_internal.h; sourceTree = "<group>"; };
+		1621D30C1406C47A00F7069B /* libfreenect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libfreenect.h; sourceTree = "<group>"; };
+		1621D30D1406C47A00F7069B /* libfreenect.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = libfreenect.hpp; sourceTree = "<group>"; };
+		1621D30E1406C47A00F7069B /* libfreenect.pc.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libfreenect.pc.in; sourceTree = "<group>"; };
+		1621D30F1406C47A00F7069B /* tilt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tilt.c; sourceTree = "<group>"; };
+		1621D3101406C47A00F7069B /* usb_libusb10.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = usb_libusb10.c; sourceTree = "<group>"; };
+		1621D3111406C47A00F7069B /* usb_libusb10.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = usb_libusb10.h; sourceTree = "<group>"; };
+		1621D3161406C47A00F7069B /* libusb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libusb.h; sourceTree = "<group>"; };
+		1621D3181406C47A00F7069B /* usb-1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "usb-1.0.a"; sourceTree = "<group>"; };
+		1621D31A1406C47A00F7069B /* ofxBase3DVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxBase3DVideo.h; sourceTree = "<group>"; };
+		1621D31B1406C47A00F7069B /* ofxKinect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxKinect.cpp; sourceTree = "<group>"; };
+		1621D31C1406C47A00F7069B /* ofxKinect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxKinect.h; sourceTree = "<group>"; };
+		1621D31D1406C47A00F7069B /* ofxKinectCalibration.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxKinectCalibration.cpp; sourceTree = "<group>"; };
+		1621D31E1406C47A00F7069B /* ofxKinectCalibration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxKinectCalibration.h; sourceTree = "<group>"; };
+		1621D31F1406C47A00F7069B /* ofxKinectPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxKinectPlayer.cpp; sourceTree = "<group>"; };
+		1621D3201406C47A00F7069B /* ofxKinectPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxKinectPlayer.h; sourceTree = "<group>"; };
+		1621D3211406C47A00F7069B /* ofxKinectRecorder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxKinectRecorder.cpp; sourceTree = "<group>"; };
+		1621D3221406C47A00F7069B /* ofxKinectRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxKinectRecorder.h; sourceTree = "<group>"; };
 		E45BE0390E8CC647009D7055 /* FreeImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FreeImage.h; path = ../../../libs/freeimage/include/FreeImage.h; sourceTree = SOURCE_ROOT; };
 		E45BE03F0E8CC650009D7055 /* fmod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fmod.h; path = ../../../libs/fmodex/include/fmod.h; sourceTree = SOURCE_ROOT; };
 		E45BE0400E8CC650009D7055 /* fmod.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = fmod.hpp; path = ../../../libs/fmodex/include/fmod.hpp; sourceTree = SOURCE_ROOT; };
@@ -240,8 +240,8 @@
 				E4C2429410CC5C38004149E2 /* freetype.a in Frameworks */,
 				E4C242CD10CC650E004149E2 /* libfmodex.dylib in Frameworks */,
 				E4C246DA10CCAE22004149E2 /* freeimage.a in Frameworks */,
-				160CC83413A3F379009B3573 /* usb-1.0.a in Frameworks */,
 				160CC88013A3F3CD009B3573 /* openCV.a in Frameworks */,
+				1621D3271406C47B00F7069B /* usb-1.0.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,92 +251,10 @@
 		160CC74A13A3F378009B3573 /* ofxKinect */ = {
 			isa = PBXGroup;
 			children = (
-				160CC81013A3F379009B3573 /* libs */,
-				160CC82313A3F379009B3573 /* src */,
+				1621D3071406C47A00F7069B /* libs */,
+				1621D3191406C47A00F7069B /* src */,
 			);
 			path = ofxKinect;
-			sourceTree = "<group>";
-		};
-		160CC81013A3F379009B3573 /* libs */ = {
-			isa = PBXGroup;
-			children = (
-				160CC81113A3F379009B3573 /* libfreenect */,
-				160CC81B13A3F379009B3573 /* libusb */,
-			);
-			path = libs;
-			sourceTree = "<group>";
-		};
-		160CC81113A3F379009B3573 /* libfreenect */ = {
-			isa = PBXGroup;
-			children = (
-				160CC81213A3F379009B3573 /* cameras.c */,
-				160CC81313A3F379009B3573 /* core.c */,
-				160CC81413A3F379009B3573 /* freenect_internal.h */,
-				160CC81513A3F379009B3573 /* libfreenect.h */,
-				160CC81613A3F379009B3573 /* libfreenect.hpp */,
-				160CC81713A3F379009B3573 /* libfreenect.pc.in */,
-				160CC81813A3F379009B3573 /* tilt.c */,
-				160CC81913A3F379009B3573 /* usb_libusb10.c */,
-				160CC81A13A3F379009B3573 /* usb_libusb10.h */,
-			);
-			path = libfreenect;
-			sourceTree = "<group>";
-		};
-		160CC81B13A3F379009B3573 /* libusb */ = {
-			isa = PBXGroup;
-			children = (
-				160CC81C13A3F379009B3573 /* osx */,
-			);
-			path = libusb;
-			sourceTree = "<group>";
-		};
-		160CC81C13A3F379009B3573 /* osx */ = {
-			isa = PBXGroup;
-			children = (
-				160CC81D13A3F379009B3573 /* include */,
-				160CC82013A3F379009B3573 /* libs */,
-			);
-			path = osx;
-			sourceTree = "<group>";
-		};
-		160CC81D13A3F379009B3573 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				160CC81E13A3F379009B3573 /* libusb-1.0 */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		160CC81E13A3F379009B3573 /* libusb-1.0 */ = {
-			isa = PBXGroup;
-			children = (
-				160CC81F13A3F379009B3573 /* libusb.h */,
-			);
-			path = "libusb-1.0";
-			sourceTree = "<group>";
-		};
-		160CC82013A3F379009B3573 /* libs */ = {
-			isa = PBXGroup;
-			children = (
-				160CC82113A3F379009B3573 /* usb-1.0.a */,
-			);
-			path = libs;
-			sourceTree = "<group>";
-		};
-		160CC82313A3F379009B3573 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				160CC82413A3F379009B3573 /* ofxBase3DVideo.h */,
-				160CC82513A3F379009B3573 /* ofxKinect.cpp */,
-				160CC82613A3F379009B3573 /* ofxKinect.h */,
-				160CC82713A3F379009B3573 /* ofxKinectCalibration.cpp */,
-				160CC82813A3F379009B3573 /* ofxKinectCalibration.h */,
-				160CC82913A3F379009B3573 /* ofxKinectPlayer.cpp */,
-				160CC82A13A3F379009B3573 /* ofxKinectPlayer.h */,
-				160CC82B13A3F379009B3573 /* ofxKinectRecorder.cpp */,
-				160CC82C13A3F379009B3573 /* ofxKinectRecorder.h */,
-			);
-			path = src;
 			sourceTree = "<group>";
 		};
 		160CC84F13A3F3BC009B3573 /* ofxThread */ = {
@@ -347,8 +265,8 @@
 				160CC85313A3F3BC009B3573 /* src */,
 			);
 			name = ofxThread;
-			path = /Users/takashi/dev/lib/openFrameworks/addons/ofxThread;
-			sourceTree = "<absolute>";
+			path = ../../../addons/ofxThread;
+			sourceTree = SOURCE_ROOT;
 		};
 		160CC85013A3F3BC009B3573 /* docs */ = {
 			isa = PBXGroup;
@@ -377,8 +295,8 @@
 				160CC86F13A3F3CD009B3573 /* src */,
 			);
 			name = ofxOpenCv;
-			path = /Users/takashi/dev/lib/openFrameworks/addons/ofxOpenCv;
-			sourceTree = "<absolute>";
+			path = ../../../addons/ofxOpenCv;
+			sourceTree = SOURCE_ROOT;
 		};
 		160CC85913A3F3CD009B3573 /* libs */ = {
 			isa = PBXGroup;
@@ -472,8 +390,8 @@
 				160CC88913A3F3DA009B3573 /* src */,
 			);
 			name = ofxVectorMath;
-			path = /Users/takashi/dev/lib/openFrameworks/addons/ofxVectorMath;
-			sourceTree = "<absolute>";
+			path = ../../../addons/ofxVectorMath;
+			sourceTree = SOURCE_ROOT;
 		};
 		160CC88913A3F3DA009B3573 /* src */ = {
 			isa = PBXGroup;
@@ -495,6 +413,90 @@
 			name = src;
 			path = /Users/takashi/dev/lib/openFrameworks/addons/ofxVectorMath/src;
 			sourceTree = "<absolute>";
+		};
+		1621D3071406C47A00F7069B /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				1621D3081406C47A00F7069B /* libfreenect */,
+				1621D3121406C47A00F7069B /* libusb */,
+			);
+			name = libs;
+			path = ofxKinect_mac/libs;
+			sourceTree = SOURCE_ROOT;
+		};
+		1621D3081406C47A00F7069B /* libfreenect */ = {
+			isa = PBXGroup;
+			children = (
+				1621D3091406C47A00F7069B /* cameras.c */,
+				1621D30A1406C47A00F7069B /* core.c */,
+				1621D30B1406C47A00F7069B /* freenect_internal.h */,
+				1621D30C1406C47A00F7069B /* libfreenect.h */,
+				1621D30D1406C47A00F7069B /* libfreenect.hpp */,
+				1621D30E1406C47A00F7069B /* libfreenect.pc.in */,
+				1621D30F1406C47A00F7069B /* tilt.c */,
+				1621D3101406C47A00F7069B /* usb_libusb10.c */,
+				1621D3111406C47A00F7069B /* usb_libusb10.h */,
+			);
+			path = libfreenect;
+			sourceTree = "<group>";
+		};
+		1621D3121406C47A00F7069B /* libusb */ = {
+			isa = PBXGroup;
+			children = (
+				1621D3131406C47A00F7069B /* osx */,
+			);
+			path = libusb;
+			sourceTree = "<group>";
+		};
+		1621D3131406C47A00F7069B /* osx */ = {
+			isa = PBXGroup;
+			children = (
+				1621D3141406C47A00F7069B /* include */,
+				1621D3171406C47A00F7069B /* libs */,
+			);
+			path = osx;
+			sourceTree = "<group>";
+		};
+		1621D3141406C47A00F7069B /* include */ = {
+			isa = PBXGroup;
+			children = (
+				1621D3151406C47A00F7069B /* libusb-1.0 */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		1621D3151406C47A00F7069B /* libusb-1.0 */ = {
+			isa = PBXGroup;
+			children = (
+				1621D3161406C47A00F7069B /* libusb.h */,
+			);
+			path = "libusb-1.0";
+			sourceTree = "<group>";
+		};
+		1621D3171406C47A00F7069B /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				1621D3181406C47A00F7069B /* usb-1.0.a */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		1621D3191406C47A00F7069B /* src */ = {
+			isa = PBXGroup;
+			children = (
+				1621D31A1406C47A00F7069B /* ofxBase3DVideo.h */,
+				1621D31B1406C47A00F7069B /* ofxKinect.cpp */,
+				1621D31C1406C47A00F7069B /* ofxKinect.h */,
+				1621D31D1406C47A00F7069B /* ofxKinectCalibration.cpp */,
+				1621D31E1406C47A00F7069B /* ofxKinectCalibration.h */,
+				1621D31F1406C47A00F7069B /* ofxKinectPlayer.cpp */,
+				1621D3201406C47A00F7069B /* ofxKinectPlayer.h */,
+				1621D3211406C47A00F7069B /* ofxKinectRecorder.cpp */,
+				1621D3221406C47A00F7069B /* ofxKinectRecorder.h */,
+			);
+			name = src;
+			path = ofxKinect_mac/src;
+			sourceTree = SOURCE_ROOT;
 		};
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
@@ -876,14 +878,6 @@
 			files = (
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofxKinectSample.cpp in Sources */,
-				160CC83013A3F379009B3573 /* cameras.c in Sources */,
-				160CC83113A3F379009B3573 /* core.c in Sources */,
-				160CC83213A3F379009B3573 /* tilt.c in Sources */,
-				160CC83313A3F379009B3573 /* usb_libusb10.c in Sources */,
-				160CC83513A3F379009B3573 /* ofxKinect.cpp in Sources */,
-				160CC83613A3F379009B3573 /* ofxKinectCalibration.cpp in Sources */,
-				160CC83713A3F379009B3573 /* ofxKinectPlayer.cpp in Sources */,
-				160CC83813A3F379009B3573 /* ofxKinectRecorder.cpp in Sources */,
 				160CC85613A3F3BC009B3573 /* ofxThread.cpp in Sources */,
 				160CC88113A3F3CD009B3573 /* ofxCvColorImage.cpp in Sources */,
 				160CC88213A3F3CD009B3573 /* ofxCvContourFinder.cpp in Sources */,
@@ -894,6 +888,14 @@
 				160CC89713A3F3DA009B3573 /* ofxMatrix3x3.cpp in Sources */,
 				160CC89813A3F3DA009B3573 /* ofxMatrix4x4.cpp in Sources */,
 				160CC89913A3F3DA009B3573 /* ofxQuaternion.cpp in Sources */,
+				1621D3231406C47B00F7069B /* cameras.c in Sources */,
+				1621D3241406C47B00F7069B /* core.c in Sources */,
+				1621D3251406C47B00F7069B /* tilt.c in Sources */,
+				1621D3261406C47B00F7069B /* usb_libusb10.c in Sources */,
+				1621D3281406C47B00F7069B /* ofxKinect.cpp in Sources */,
+				1621D3291406C47B00F7069B /* ofxKinectCalibration.cpp in Sources */,
+				1621D32A1406C47B00F7069B /* ofxKinectPlayer.cpp in Sources */,
+				1621D32B1406C47B00F7069B /* ofxKinectRecorder.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -992,6 +994,7 @@
 					"\"$(SRCROOT)/../../../addons/ofxOsc/libs/oscpack/lib/win_cb\"",
 					"\"$(SRCROOT)/ofxKinect/libs/libusb/osx/libs\"",
 					/Users/takashi/dev/lib/openFrameworks/addons/ofxOpenCv/libs/opencv/lib/osx,
+					"\"$(SRCROOT)/ofxKinect_mac/libs/libusb/osx/libs\"",
 				);
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/freeimage/lib/osx\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_14 = "\"$(SRCROOT)/../../../libs/fmodex/lib/osx\"";
@@ -1126,6 +1129,7 @@
 					"\"$(SRCROOT)/../../../addons/ofxOsc/libs/oscpack/lib/win_cb\"",
 					"\"$(SRCROOT)/ofxKinect/libs/libusb/osx/libs\"",
 					/Users/takashi/dev/lib/openFrameworks/addons/ofxOpenCv/libs/opencv/lib/osx,
+					"\"$(SRCROOT)/ofxKinect_mac/libs/libusb/osx/libs\"",
 				);
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/freeimage/lib/osx\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_14 = "\"$(SRCROOT)/../../../libs/fmodex/lib/osx\"";
@@ -1184,6 +1188,7 @@
 					"\"$(SRCROOT)/../../../addons/ofxOsc/libs/oscpack/lib/win_cb\"",
 					"\"$(SRCROOT)/ofxKinect/libs/libusb/osx/libs\"",
 					/Users/takashi/dev/lib/openFrameworks/addons/ofxOpenCv/libs/opencv/lib/osx,
+					"\"$(SRCROOT)/ofxKinect_mac/libs/libusb/osx/libs\"",
 				);
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/freeimage/lib/osx\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_14 = "\"$(SRCROOT)/../../../libs/fmodex/lib/osx\"";
