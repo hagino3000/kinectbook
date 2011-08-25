@@ -1,0 +1,1397 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1601D09213B122A1007DC7E6 /* libzmq.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1601D09113B122A1007DC7E6 /* libzmq.dylib */; };
+		1601D23B13B21E85007DC7E6 /* ofxDepthGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1601D20813B21E84007DC7E6 /* ofxDepthGenerator.cpp */; };
+		1601D23C13B21E85007DC7E6 /* ofxGestureGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1601D20A13B21E84007DC7E6 /* ofxGestureGenerator.cpp */; };
+		1601D23D13B21E85007DC7E6 /* ofxHandGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1601D20C13B21E84007DC7E6 /* ofxHandGenerator.cpp */; };
+		1601D23E13B21E85007DC7E6 /* ofxHardwareDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1601D20E13B21E84007DC7E6 /* ofxHardwareDriver.cpp */; };
+		1601D23F13B21E85007DC7E6 /* ofxImageGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1601D21013B21E84007DC7E6 /* ofxImageGenerator.cpp */; };
+		1601D24013B21E85007DC7E6 /* ofxIRGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1601D21213B21E84007DC7E6 /* ofxIRGenerator.cpp */; };
+		1601D24113B21E85007DC7E6 /* ofxOpenNIContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1601D21513B21E84007DC7E6 /* ofxOpenNIContext.cpp */; };
+		1601D24213B21E85007DC7E6 /* ofxOpenNIRecorder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1601D21813B21E84007DC7E6 /* ofxOpenNIRecorder.cpp */; };
+		1601D24313B21E85007DC7E6 /* ofxTrackedHand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1601D21A13B21E84007DC7E6 /* ofxTrackedHand.cpp */; };
+		1601D24413B21E85007DC7E6 /* ofxTrackedUser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1601D21C13B21E84007DC7E6 /* ofxTrackedUser.cpp */; };
+		1601D24513B21E85007DC7E6 /* ofxUserGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1601D21E13B21E84007DC7E6 /* ofxUserGenerator.cpp */; };
+		1601D26713B21EC0007DC7E6 /* libnimCodecs.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1601D25913B21EC0007DC7E6 /* libnimCodecs.dylib */; };
+		1601D26813B21EC0007DC7E6 /* libnimMockNodes.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1601D25A13B21EC0007DC7E6 /* libnimMockNodes.dylib */; };
+		1601D26913B21EC0007DC7E6 /* libnimRecorder.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1601D25B13B21EC0007DC7E6 /* libnimRecorder.dylib */; };
+		1601D26A13B21EC0007DC7E6 /* libOpenNI.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1601D25C13B21EC0007DC7E6 /* libOpenNI.dylib */; };
+		1601D26B13B21EC0007DC7E6 /* libusb-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1601D25D13B21EC0007DC7E6 /* libusb-1.0.0.dylib */; };
+		1601D26C13B21EC0007DC7E6 /* libXnCore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1601D25E13B21EC0007DC7E6 /* libXnCore.dylib */; };
+		1601D26D13B21EC0007DC7E6 /* libXnDDK.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1601D25F13B21EC0007DC7E6 /* libXnDDK.dylib */; };
+		1601D26E13B21EC0007DC7E6 /* libXnDeviceFile.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1601D26013B21EC0007DC7E6 /* libXnDeviceFile.dylib */; };
+		1601D26F13B21EC0007DC7E6 /* libXnDeviceSensorV2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1601D26113B21EC0007DC7E6 /* libXnDeviceSensorV2.dylib */; };
+		1601D27013B21EC0007DC7E6 /* libXnFormats.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1601D26213B21EC0007DC7E6 /* libXnFormats.dylib */; };
+		1601D27113B21EC0007DC7E6 /* libXnVCNite.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1601D26313B21EC0007DC7E6 /* libXnVCNite.dylib */; };
+		1601D27213B21EC0007DC7E6 /* libXnVFeatures.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1601D26413B21EC0007DC7E6 /* libXnVFeatures.dylib */; };
+		1601D27313B21EC0007DC7E6 /* libXnVHandGenerator.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1601D26513B21EC0007DC7E6 /* libXnVHandGenerator.dylib */; };
+		1601D27413B21EC0007DC7E6 /* libXnVNite.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1601D26613B21EC0007DC7E6 /* libXnVNite.dylib */; };
+		1601D35813B264BA007DC7E6 /* client.js in Sources */ = {isa = PBXBuildFile; fileRef = 1601D35313B264BA007DC7E6 /* client.js */; };
+		1601D35913B264BA007DC7E6 /* jquery-1.4.4.min.js in Sources */ = {isa = PBXBuildFile; fileRef = 1601D35413B264BA007DC7E6 /* jquery-1.4.4.min.js */; };
+		1601D35A13B264BA007DC7E6 /* server.js in Sources */ = {isa = PBXBuildFile; fileRef = 1601D35513B264BA007DC7E6 /* server.js */; };
+		1601D35B13B264BA007DC7E6 /* socket.io.js in Sources */ = {isa = PBXBuildFile; fileRef = 1601D35613B264BA007DC7E6 /* socket.io.js */; };
+		E45BE0AA0E8CC67C009D7055 /* GLee.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE0A90E8CC67C009D7055 /* GLee.a */; };
+		E45BE2E40E8CC69C009D7055 /* rtAudio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE2E30E8CC69C009D7055 /* rtAudio.a */; };
+		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
+		E45BE97C0E8CC7DD009D7055 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */; };
+		E45BE97D0E8CC7DD009D7055 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9730E8CC7DD009D7055 /* AudioToolbox.framework */; };
+		E45BE97E0E8CC7DD009D7055 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9740E8CC7DD009D7055 /* Carbon.framework */; };
+		E45BE97F0E8CC7DD009D7055 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9750E8CC7DD009D7055 /* CoreAudio.framework */; };
+		E45BE9800E8CC7DD009D7055 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9760E8CC7DD009D7055 /* CoreFoundation.framework */; };
+		E45BE9810E8CC7DD009D7055 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9770E8CC7DD009D7055 /* CoreServices.framework */; };
+		E45BE9830E8CC7DD009D7055 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9790E8CC7DD009D7055 /* OpenGL.framework */; };
+		E45BE9840E8CC7DD009D7055 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE97A0E8CC7DD009D7055 /* QuickTime.framework */; };
+		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
+		E4B69E210A3A1BDC003C02F2 /* kinectWeb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* kinectWeb.cpp */; };
+		E4C2422B10CC554B004149E2 /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2421E10CC549C004149E2 /* openFrameworksDebug.a */; };
+		E4C2424710CC5A17004149E2 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2424410CC5A17004149E2 /* AppKit.framework */; };
+		E4C2424810CC5A17004149E2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2424510CC5A17004149E2 /* Cocoa.framework */; };
+		E4C2424910CC5A17004149E2 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2424610CC5A17004149E2 /* IOKit.framework */; };
+		E4C2426610CC5A78004149E2 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2425F10CC5A78004149E2 /* GLUT.framework */; };
+		E4C2426B10CC5AA6004149E2 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4C2425F10CC5A78004149E2 /* GLUT.framework */; };
+		E4C2427F10CC5B66004149E2 /* CppUnit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2427A10CC5B66004149E2 /* CppUnit.a */; };
+		E4C2428010CC5B66004149E2 /* PocoFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2427B10CC5B66004149E2 /* PocoFoundation.a */; };
+		E4C2428110CC5B66004149E2 /* PocoNet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2427C10CC5B66004149E2 /* PocoNet.a */; };
+		E4C2428210CC5B66004149E2 /* PocoUtil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2427D10CC5B66004149E2 /* PocoUtil.a */; };
+		E4C2428310CC5B66004149E2 /* PocoXML.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2427E10CC5B66004149E2 /* PocoXML.a */; };
+		E4C2429410CC5C38004149E2 /* freetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2429310CC5C38004149E2 /* freetype.a */; };
+		E4C242CD10CC650E004149E2 /* libfmodex.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C242CC10CC650E004149E2 /* libfmodex.dylib */; };
+		E4C246DA10CCAE22004149E2 /* freeimage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C246D910CCAE22004149E2 /* freeimage.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4C2421D10CC549C004149E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4C2421610CC549C004149E2 /* openFrameworksLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4B27C1510CBEB8E00536013;
+			remoteInfo = openFrameworks;
+		};
+		E4C2422710CC54DA004149E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4C2421610CC549C004149E2 /* openFrameworksLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E4B27C1410CBEB8E00536013;
+			remoteInfo = openFrameworks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E4C2427710CC5ABF004149E2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E4C2426B10CC5AA6004149E2 /* GLUT.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4C2444710CC769B004149E2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1601D09113B122A1007DC7E6 /* libzmq.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libzmq.dylib; path = /opt/local/lib/libzmq.dylib; sourceTree = "<absolute>"; };
+		1601D17D13B21E84007DC7E6 /* libusb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libusb.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/libusb/libusb.h; sourceTree = "<absolute>"; };
+		1601D17F13B21E84007DC7E6 /* XnCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnCommon.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnCommon.h; sourceTree = "<absolute>"; };
+		1601D18013B21E84007DC7E6 /* XnV3DVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnV3DVector.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnV3DVector.h; sourceTree = "<absolute>"; };
+		1601D18113B21E84007DC7E6 /* XnVActivationMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVActivationMessage.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVActivationMessage.h; sourceTree = "<absolute>"; };
+		1601D18213B21E84007DC7E6 /* XnVBroadcaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVBroadcaster.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVBroadcaster.h; sourceTree = "<absolute>"; };
+		1601D18313B21E84007DC7E6 /* XnVCCMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVCCMessage.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVCCMessage.h; sourceTree = "<absolute>"; };
+		1601D18413B21E84007DC7E6 /* XnVCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVCircle.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVCircle.h; sourceTree = "<absolute>"; };
+		1601D18513B21E84007DC7E6 /* XnVCircleDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVCircleDetector.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVCircleDetector.h; sourceTree = "<absolute>"; };
+		1601D18613B21E84007DC7E6 /* XnVClickableVirtualPlane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVClickableVirtualPlane.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVClickableVirtualPlane.h; sourceTree = "<absolute>"; };
+		1601D18713B21E84007DC7E6 /* XnVComplexMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVComplexMessage.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVComplexMessage.h; sourceTree = "<absolute>"; };
+		1601D18813B21E84007DC7E6 /* XnVDepthControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVDepthControl.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVDepthControl.h; sourceTree = "<absolute>"; };
+		1601D18913B21E84007DC7E6 /* XnVDepthGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVDepthGenerator.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVDepthGenerator.h; sourceTree = "<absolute>"; };
+		1601D18A13B21E84007DC7E6 /* XnVDepthMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVDepthMessage.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVDepthMessage.h; sourceTree = "<absolute>"; };
+		1601D18B13B21E84007DC7E6 /* XnVDeviceControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVDeviceControl.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVDeviceControl.h; sourceTree = "<absolute>"; };
+		1601D18C13B21E84007DC7E6 /* XnVDeviceFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVDeviceFilter.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVDeviceFilter.h; sourceTree = "<absolute>"; };
+		1601D18D13B21E84007DC7E6 /* XnVDeviceGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVDeviceGenerator.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVDeviceGenerator.h; sourceTree = "<absolute>"; };
+		1601D18E13B21E84007DC7E6 /* XnVDeviceMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVDeviceMessage.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVDeviceMessage.h; sourceTree = "<absolute>"; };
+		1601D18F13B21E84007DC7E6 /* XnVDirection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVDirection.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVDirection.h; sourceTree = "<absolute>"; };
+		1601D19013B21E84007DC7E6 /* XnVFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVFilter.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVFilter.h; sourceTree = "<absolute>"; };
+		1601D19113B21E84007DC7E6 /* XnVFlowRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVFlowRouter.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVFlowRouter.h; sourceTree = "<absolute>"; };
+		1601D19213B21E84007DC7E6 /* XnVGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVGesture.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVGesture.h; sourceTree = "<absolute>"; };
+		1601D19313B21E84007DC7E6 /* XnVHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVHandle.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVHandle.h; sourceTree = "<absolute>"; };
+		1601D19413B21E84007DC7E6 /* XnVHandPointContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVHandPointContext.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVHandPointContext.h; sourceTree = "<absolute>"; };
+		1601D19513B21E84007DC7E6 /* XnVImageGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVImageGenerator.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVImageGenerator.h; sourceTree = "<absolute>"; };
+		1601D19613B21E84007DC7E6 /* XnVImageMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVImageMessage.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVImageMessage.h; sourceTree = "<absolute>"; };
+		1601D19713B21E84007DC7E6 /* XnVMathCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVMathCommon.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVMathCommon.h; sourceTree = "<absolute>"; };
+		1601D19813B21E84007DC7E6 /* XnVMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVMessage.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVMessage.h; sourceTree = "<absolute>"; };
+		1601D19913B21E84007DC7E6 /* XnVMessageGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVMessageGenerator.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVMessageGenerator.h; sourceTree = "<absolute>"; };
+		1601D19A13B21E84007DC7E6 /* XnVMessageListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVMessageListener.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVMessageListener.h; sourceTree = "<absolute>"; };
+		1601D19B13B21E84007DC7E6 /* XnVMessageMux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVMessageMux.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVMessageMux.h; sourceTree = "<absolute>"; };
+		1601D19C13B21E84007DC7E6 /* XnVMultiItemHysteresis1D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVMultiItemHysteresis1D.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVMultiItemHysteresis1D.h; sourceTree = "<absolute>"; };
+		1601D19D13B21E84007DC7E6 /* XnVMultiItemHysteresis2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVMultiItemHysteresis2D.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVMultiItemHysteresis2D.h; sourceTree = "<absolute>"; };
+		1601D19E13B21E84007DC7E6 /* XnVMultipleHands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVMultipleHands.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVMultipleHands.h; sourceTree = "<absolute>"; };
+		1601D19F13B21E84007DC7E6 /* XnVMultiProcessFlowClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVMultiProcessFlowClient.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVMultiProcessFlowClient.h; sourceTree = "<absolute>"; };
+		1601D1A013B21E84007DC7E6 /* XnVMultiProcessFlowServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVMultiProcessFlowServer.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVMultiProcessFlowServer.h; sourceTree = "<absolute>"; };
+		1601D1A113B21E84007DC7E6 /* XnVNite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVNite.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVNite.h; sourceTree = "<absolute>"; };
+		1601D1A213B21E84007DC7E6 /* XnVNiteControls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVNiteControls.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVNiteControls.h; sourceTree = "<absolute>"; };
+		1601D1A313B21E84007DC7E6 /* XnVNiteDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVNiteDefs.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVNiteDefs.h; sourceTree = "<absolute>"; };
+		1601D1A413B21E84007DC7E6 /* XnVNiteEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVNiteEvents.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVNiteEvents.h; sourceTree = "<absolute>"; };
+		1601D1A513B21E84007DC7E6 /* XnVNiteFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVNiteFramework.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVNiteFramework.h; sourceTree = "<absolute>"; };
+		1601D1A613B21E84007DC7E6 /* XnVNiteLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVNiteLog.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVNiteLog.h; sourceTree = "<absolute>"; };
+		1601D1A713B21E84007DC7E6 /* XnVNiteStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVNiteStatus.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVNiteStatus.h; sourceTree = "<absolute>"; };
+		1601D1A813B21E84007DC7E6 /* XnVNiteVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVNiteVersion.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVNiteVersion.h; sourceTree = "<absolute>"; };
+		1601D1A913B21E84007DC7E6 /* XnVPointArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVPointArea.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVPointArea.h; sourceTree = "<absolute>"; };
+		1601D1AA13B21E84007DC7E6 /* XnVPointControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVPointControl.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVPointControl.h; sourceTree = "<absolute>"; };
+		1601D1AB13B21E84007DC7E6 /* XnVPointDenoiser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVPointDenoiser.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVPointDenoiser.h; sourceTree = "<absolute>"; };
+		1601D1AC13B21E84007DC7E6 /* XnVPointFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVPointFilter.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVPointFilter.h; sourceTree = "<absolute>"; };
+		1601D1AD13B21E84007DC7E6 /* XnVPointMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVPointMessage.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVPointMessage.h; sourceTree = "<absolute>"; };
+		1601D1AE13B21E84007DC7E6 /* XnVPointTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVPointTracker.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVPointTracker.h; sourceTree = "<absolute>"; };
+		1601D1AF13B21E84007DC7E6 /* XnVPushDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVPushDetector.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVPushDetector.h; sourceTree = "<absolute>"; };
+		1601D1B013B21E84007DC7E6 /* XnVSelectableSlider1D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVSelectableSlider1D.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVSelectableSlider1D.h; sourceTree = "<absolute>"; };
+		1601D1B113B21E84007DC7E6 /* XnVSelectableSlider2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVSelectableSlider2D.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVSelectableSlider2D.h; sourceTree = "<absolute>"; };
+		1601D1B213B21E84007DC7E6 /* XnVSessionGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVSessionGenerator.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVSessionGenerator.h; sourceTree = "<absolute>"; };
+		1601D1B313B21E84007DC7E6 /* XnVSessionListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVSessionListener.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVSessionListener.h; sourceTree = "<absolute>"; };
+		1601D1B413B21E84007DC7E6 /* XnVSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVSessionManager.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVSessionManager.h; sourceTree = "<absolute>"; };
+		1601D1B513B21E84007DC7E6 /* XnVSessionMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVSessionMessage.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVSessionMessage.h; sourceTree = "<absolute>"; };
+		1601D1B613B21E84007DC7E6 /* XnVSlider1D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVSlider1D.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVSlider1D.h; sourceTree = "<absolute>"; };
+		1601D1B713B21E84007DC7E6 /* XnVSlider2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVSlider2D.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVSlider2D.h; sourceTree = "<absolute>"; };
+		1601D1B813B21E84007DC7E6 /* XnVSlider3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVSlider3D.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVSlider3D.h; sourceTree = "<absolute>"; };
+		1601D1B913B21E84007DC7E6 /* XnVSteadyDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVSteadyDetector.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVSteadyDetector.h; sourceTree = "<absolute>"; };
+		1601D1BA13B21E84007DC7E6 /* XnVSwipeDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVSwipeDetector.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVSwipeDetector.h; sourceTree = "<absolute>"; };
+		1601D1BB13B21E84007DC7E6 /* XnVVirtualCoordinates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVVirtualCoordinates.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVVirtualCoordinates.h; sourceTree = "<absolute>"; };
+		1601D1BC13B21E84007DC7E6 /* XnVWaveDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVWaveDetector.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite/XnVWaveDetector.h; sourceTree = "<absolute>"; };
+		1601D1BE13B21E84007DC7E6 /* IXnNodeAllocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IXnNodeAllocator.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/IXnNodeAllocator.h; sourceTree = "<absolute>"; };
+		1601D1C013B21E84007DC7E6 /* XnPlatformLinux-Arm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "XnPlatformLinux-Arm.h"; path = "/Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/Linux-Arm/XnPlatformLinux-Arm.h"; sourceTree = "<absolute>"; };
+		1601D1C213B21E84007DC7E6 /* XnOSLinux-x86.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "XnOSLinux-x86.h"; path = "/Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/Linux-x86/XnOSLinux-x86.h"; sourceTree = "<absolute>"; };
+		1601D1C313B21E84007DC7E6 /* XnPlatformLinux-x86.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "XnPlatformLinux-x86.h"; path = "/Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/Linux-x86/XnPlatformLinux-x86.h"; sourceTree = "<absolute>"; };
+		1601D1C513B21E84007DC7E6 /* XnPlatformMacOSX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnPlatformMacOSX.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/MacOSX/XnPlatformMacOSX.h; sourceTree = "<absolute>"; };
+		1601D1C713B21E84007DC7E6 /* XnOSWin32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnOSWin32.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/Win32/XnOSWin32.h; sourceTree = "<absolute>"; };
+		1601D1C813B21E84007DC7E6 /* XnPlatformWin32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnPlatformWin32.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/Win32/XnPlatformWin32.h; sourceTree = "<absolute>"; };
+		1601D1C913B21E84007DC7E6 /* XnBaseNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnBaseNode.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/XnBaseNode.h; sourceTree = "<absolute>"; };
+		1601D1CA13B21E84007DC7E6 /* XnCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnCallback.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/XnCallback.h; sourceTree = "<absolute>"; };
+		1601D1CB13B21E84007DC7E6 /* XnCodecIDs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnCodecIDs.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/XnCodecIDs.h; sourceTree = "<absolute>"; };
+		1601D1CC13B21E84007DC7E6 /* XnContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnContext.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/XnContext.h; sourceTree = "<absolute>"; };
+		1601D1CD13B21E84007DC7E6 /* XnCppWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnCppWrapper.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/XnCppWrapper.h; sourceTree = "<absolute>"; };
+		1601D1CE13B21E84007DC7E6 /* XnDataTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnDataTypes.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/XnDataTypes.h; sourceTree = "<absolute>"; };
+		1601D1CF13B21E84007DC7E6 /* XnEnumerationErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnEnumerationErrors.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/XnEnumerationErrors.h; sourceTree = "<absolute>"; };
+		1601D1D013B21E84007DC7E6 /* XnEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnEvent.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/XnEvent.h; sourceTree = "<absolute>"; };
+		1601D1D113B21E84007DC7E6 /* XnFPSCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnFPSCalculator.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/XnFPSCalculator.h; sourceTree = "<absolute>"; };
+		1601D1D213B21E84007DC7E6 /* XnGeneralBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnGeneralBuffer.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/XnGeneralBuffer.h; sourceTree = "<absolute>"; };
+		1601D1D313B21E84007DC7E6 /* XnHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnHash.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/XnHash.h; sourceTree = "<absolute>"; };
+		1601D1D413B21E84007DC7E6 /* XnInternalDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnInternalDefs.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/XnInternalDefs.h; sourceTree = "<absolute>"; };
+		1601D1D513B21E84007DC7E6 /* XnLicensing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnLicensing.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/XnLicensing.h; sourceTree = "<absolute>"; };
+		1601D1D613B21E84007DC7E6 /* XnList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnList.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/XnList.h; sourceTree = "<absolute>"; };
+		1601D1D713B21E84007DC7E6 /* XnLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnLog.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/XnLog.h; sourceTree = "<absolute>"; };
+		1601D1D813B21E84007DC7E6 /* XnMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnMacros.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/XnMacros.h; sourceTree = "<absolute>"; };
+		1601D1D913B21E84007DC7E6 /* XnModuleCppInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnModuleCppInterface.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/XnModuleCppInterface.h; sourceTree = "<absolute>"; };
+		1601D1DA13B21E84007DC7E6 /* XnModuleCppRegistratration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnModuleCppRegistratration.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/XnModuleCppRegistratration.h; sourceTree = "<absolute>"; };
+		1601D1DB13B21E84007DC7E6 /* XnModuleInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnModuleInterface.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/XnModuleInterface.h; sourceTree = "<absolute>"; };
+		1601D1DC13B21E84007DC7E6 /* XnNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnNode.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/XnNode.h; sourceTree = "<absolute>"; };
+		1601D1DD13B21E84007DC7E6 /* XnNodeAllocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnNodeAllocator.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/XnNodeAllocator.h; sourceTree = "<absolute>"; };
+		1601D1DE13B21E84007DC7E6 /* XnOpenNI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnOpenNI.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/XnOpenNI.h; sourceTree = "<absolute>"; };
+		1601D1DF13B21E84007DC7E6 /* XnOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnOS.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/XnOS.h; sourceTree = "<absolute>"; };
+		1601D1E013B21E84007DC7E6 /* XnOSCpp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnOSCpp.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/XnOSCpp.h; sourceTree = "<absolute>"; };
+		1601D1E113B21E84007DC7E6 /* XnPlatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnPlatform.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/XnPlatform.h; sourceTree = "<absolute>"; };
+		1601D1E213B21E84007DC7E6 /* XnPrdNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnPrdNode.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/XnPrdNode.h; sourceTree = "<absolute>"; };
+		1601D1E313B21E84007DC7E6 /* XnPrdNodeInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnPrdNodeInfo.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/XnPrdNodeInfo.h; sourceTree = "<absolute>"; };
+		1601D1E413B21E84007DC7E6 /* XnPrdNodeInfoList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnPrdNodeInfoList.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/XnPrdNodeInfoList.h; sourceTree = "<absolute>"; };
+		1601D1E513B21E84007DC7E6 /* XnProfiling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnProfiling.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/XnProfiling.h; sourceTree = "<absolute>"; };
+		1601D1E613B21E84007DC7E6 /* XnPropNames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnPropNames.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/XnPropNames.h; sourceTree = "<absolute>"; };
+		1601D1E713B21E84007DC7E6 /* XnQueries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnQueries.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/XnQueries.h; sourceTree = "<absolute>"; };
+		1601D1E813B21E84007DC7E6 /* XnQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnQueue.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/XnQueue.h; sourceTree = "<absolute>"; };
+		1601D1E913B21E84007DC7E6 /* XnScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnScheduler.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/XnScheduler.h; sourceTree = "<absolute>"; };
+		1601D1EA13B21E84007DC7E6 /* XnStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnStack.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/XnStack.h; sourceTree = "<absolute>"; };
+		1601D1EB13B21E84007DC7E6 /* XnStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnStatus.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/XnStatus.h; sourceTree = "<absolute>"; };
+		1601D1EC13B21E84007DC7E6 /* XnStatusCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnStatusCodes.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/XnStatusCodes.h; sourceTree = "<absolute>"; };
+		1601D1ED13B21E84007DC7E6 /* XnStatusRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnStatusRegister.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/XnStatusRegister.h; sourceTree = "<absolute>"; };
+		1601D1EE13B21E84007DC7E6 /* XnStringsHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnStringsHash.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/XnStringsHash.h; sourceTree = "<absolute>"; };
+		1601D1EF13B21E84007DC7E6 /* XnThreadSafeQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnThreadSafeQueue.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/XnThreadSafeQueue.h; sourceTree = "<absolute>"; };
+		1601D1F013B21E84007DC7E6 /* XnTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnTypes.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/XnTypes.h; sourceTree = "<absolute>"; };
+		1601D1F113B21E84007DC7E6 /* XnUSB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnUSB.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/XnUSB.h; sourceTree = "<absolute>"; };
+		1601D1F213B21E84007DC7E6 /* XnUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnUtils.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/XnUtils.h; sourceTree = "<absolute>"; };
+		1601D1F313B21E84007DC7E6 /* XnVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XnVersion.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/XnVersion.h; sourceTree = "<absolute>"; };
+		1601D20813B21E84007DC7E6 /* ofxDepthGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxDepthGenerator.cpp; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/src/ofxDepthGenerator.cpp; sourceTree = "<absolute>"; };
+		1601D20913B21E84007DC7E6 /* ofxDepthGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxDepthGenerator.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/src/ofxDepthGenerator.h; sourceTree = "<absolute>"; };
+		1601D20A13B21E84007DC7E6 /* ofxGestureGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxGestureGenerator.cpp; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/src/ofxGestureGenerator.cpp; sourceTree = "<absolute>"; };
+		1601D20B13B21E84007DC7E6 /* ofxGestureGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxGestureGenerator.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/src/ofxGestureGenerator.h; sourceTree = "<absolute>"; };
+		1601D20C13B21E84007DC7E6 /* ofxHandGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxHandGenerator.cpp; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/src/ofxHandGenerator.cpp; sourceTree = "<absolute>"; };
+		1601D20D13B21E84007DC7E6 /* ofxHandGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxHandGenerator.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/src/ofxHandGenerator.h; sourceTree = "<absolute>"; };
+		1601D20E13B21E84007DC7E6 /* ofxHardwareDriver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxHardwareDriver.cpp; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/src/ofxHardwareDriver.cpp; sourceTree = "<absolute>"; };
+		1601D20F13B21E84007DC7E6 /* ofxHardwareDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxHardwareDriver.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/src/ofxHardwareDriver.h; sourceTree = "<absolute>"; };
+		1601D21013B21E84007DC7E6 /* ofxImageGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxImageGenerator.cpp; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/src/ofxImageGenerator.cpp; sourceTree = "<absolute>"; };
+		1601D21113B21E84007DC7E6 /* ofxImageGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxImageGenerator.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/src/ofxImageGenerator.h; sourceTree = "<absolute>"; };
+		1601D21213B21E84007DC7E6 /* ofxIRGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxIRGenerator.cpp; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/src/ofxIRGenerator.cpp; sourceTree = "<absolute>"; };
+		1601D21313B21E84007DC7E6 /* ofxIRGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxIRGenerator.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/src/ofxIRGenerator.h; sourceTree = "<absolute>"; };
+		1601D21413B21E84007DC7E6 /* ofxOpenNI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxOpenNI.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/src/ofxOpenNI.h; sourceTree = "<absolute>"; };
+		1601D21513B21E84007DC7E6 /* ofxOpenNIContext.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxOpenNIContext.cpp; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/src/ofxOpenNIContext.cpp; sourceTree = "<absolute>"; };
+		1601D21613B21E84007DC7E6 /* ofxOpenNIContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxOpenNIContext.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/src/ofxOpenNIContext.h; sourceTree = "<absolute>"; };
+		1601D21713B21E84007DC7E6 /* ofxOpenNIMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxOpenNIMacros.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/src/ofxOpenNIMacros.h; sourceTree = "<absolute>"; };
+		1601D21813B21E84007DC7E6 /* ofxOpenNIRecorder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxOpenNIRecorder.cpp; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/src/ofxOpenNIRecorder.cpp; sourceTree = "<absolute>"; };
+		1601D21913B21E84007DC7E6 /* ofxOpenNIRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxOpenNIRecorder.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/src/ofxOpenNIRecorder.h; sourceTree = "<absolute>"; };
+		1601D21A13B21E84007DC7E6 /* ofxTrackedHand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxTrackedHand.cpp; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/src/ofxTrackedHand.cpp; sourceTree = "<absolute>"; };
+		1601D21B13B21E84007DC7E6 /* ofxTrackedHand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxTrackedHand.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/src/ofxTrackedHand.h; sourceTree = "<absolute>"; };
+		1601D21C13B21E84007DC7E6 /* ofxTrackedUser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxTrackedUser.cpp; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/src/ofxTrackedUser.cpp; sourceTree = "<absolute>"; };
+		1601D21D13B21E84007DC7E6 /* ofxTrackedUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxTrackedUser.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/src/ofxTrackedUser.h; sourceTree = "<absolute>"; };
+		1601D21E13B21E84007DC7E6 /* ofxUserGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxUserGenerator.cpp; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/src/ofxUserGenerator.cpp; sourceTree = "<absolute>"; };
+		1601D21F13B21E84007DC7E6 /* ofxUserGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxUserGenerator.h; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/src/ofxUserGenerator.h; sourceTree = "<absolute>"; };
+		1601D25813B21EC0007DC7E6 /* change_exec_paths.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = change_exec_paths.sh; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/bin/data/openni/lib/change_exec_paths.sh; sourceTree = "<absolute>"; };
+		1601D25913B21EC0007DC7E6 /* libnimCodecs.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libnimCodecs.dylib; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/bin/data/openni/lib/libnimCodecs.dylib; sourceTree = "<absolute>"; };
+		1601D25A13B21EC0007DC7E6 /* libnimMockNodes.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libnimMockNodes.dylib; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/bin/data/openni/lib/libnimMockNodes.dylib; sourceTree = "<absolute>"; };
+		1601D25B13B21EC0007DC7E6 /* libnimRecorder.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libnimRecorder.dylib; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/bin/data/openni/lib/libnimRecorder.dylib; sourceTree = "<absolute>"; };
+		1601D25C13B21EC0007DC7E6 /* libOpenNI.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libOpenNI.dylib; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/bin/data/openni/lib/libOpenNI.dylib; sourceTree = "<absolute>"; };
+		1601D25D13B21EC0007DC7E6 /* libusb-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libusb-1.0.0.dylib"; path = "/Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/bin/data/openni/lib/libusb-1.0.0.dylib"; sourceTree = "<absolute>"; };
+		1601D25E13B21EC0007DC7E6 /* libXnCore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXnCore.dylib; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/bin/data/openni/lib/libXnCore.dylib; sourceTree = "<absolute>"; };
+		1601D25F13B21EC0007DC7E6 /* libXnDDK.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXnDDK.dylib; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/bin/data/openni/lib/libXnDDK.dylib; sourceTree = "<absolute>"; };
+		1601D26013B21EC0007DC7E6 /* libXnDeviceFile.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXnDeviceFile.dylib; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/bin/data/openni/lib/libXnDeviceFile.dylib; sourceTree = "<absolute>"; };
+		1601D26113B21EC0007DC7E6 /* libXnDeviceSensorV2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXnDeviceSensorV2.dylib; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/bin/data/openni/lib/libXnDeviceSensorV2.dylib; sourceTree = "<absolute>"; };
+		1601D26213B21EC0007DC7E6 /* libXnFormats.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXnFormats.dylib; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/bin/data/openni/lib/libXnFormats.dylib; sourceTree = "<absolute>"; };
+		1601D26313B21EC0007DC7E6 /* libXnVCNite.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXnVCNite.dylib; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/bin/data/openni/lib/libXnVCNite.dylib; sourceTree = "<absolute>"; };
+		1601D26413B21EC0007DC7E6 /* libXnVFeatures.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXnVFeatures.dylib; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/bin/data/openni/lib/libXnVFeatures.dylib; sourceTree = "<absolute>"; };
+		1601D26513B21EC0007DC7E6 /* libXnVHandGenerator.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXnVHandGenerator.dylib; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/bin/data/openni/lib/libXnVHandGenerator.dylib; sourceTree = "<absolute>"; };
+		1601D26613B21EC0007DC7E6 /* libXnVNite.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXnVNite.dylib; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/bin/data/openni/lib/libXnVNite.dylib; sourceTree = "<absolute>"; };
+		1601D35213B264BA007DC7E6 /* client.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = client.html; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/server/client.html; sourceTree = "<absolute>"; };
+		1601D35313B264BA007DC7E6 /* client.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = client.js; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/server/client.js; sourceTree = "<absolute>"; };
+		1601D35413B264BA007DC7E6 /* jquery-1.4.4.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = "jquery-1.4.4.min.js"; path = "/Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/server/jquery-1.4.4.min.js"; sourceTree = "<absolute>"; };
+		1601D35513B264BA007DC7E6 /* server.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = server.js; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/server/server.js; sourceTree = "<absolute>"; };
+		1601D35613B264BA007DC7E6 /* socket.io.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = socket.io.js; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/server/socket.io.js; sourceTree = "<absolute>"; };
+		1601D35713B264BA007DC7E6 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = style.css; path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/server/style.css; sourceTree = "<absolute>"; };
+		E45BE0390E8CC647009D7055 /* FreeImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FreeImage.h; path = ../../../libs/freeimage/include/FreeImage.h; sourceTree = SOURCE_ROOT; };
+		E45BE03F0E8CC650009D7055 /* fmod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fmod.h; path = ../../../libs/fmodex/include/fmod.h; sourceTree = SOURCE_ROOT; };
+		E45BE0400E8CC650009D7055 /* fmod.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = fmod.hpp; path = ../../../libs/fmodex/include/fmod.hpp; sourceTree = SOURCE_ROOT; };
+		E45BE0410E8CC650009D7055 /* fmod_codec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fmod_codec.h; path = ../../../libs/fmodex/include/fmod_codec.h; sourceTree = SOURCE_ROOT; };
+		E45BE0420E8CC650009D7055 /* fmod_dsp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fmod_dsp.h; path = ../../../libs/fmodex/include/fmod_dsp.h; sourceTree = SOURCE_ROOT; };
+		E45BE0430E8CC650009D7055 /* fmod_errors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fmod_errors.h; path = ../../../libs/fmodex/include/fmod_errors.h; sourceTree = SOURCE_ROOT; };
+		E45BE0440E8CC650009D7055 /* fmod_output.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fmod_output.h; path = ../../../libs/fmodex/include/fmod_output.h; sourceTree = SOURCE_ROOT; };
+		E45BE0A70E8CC67C009D7055 /* GLee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLee.h; path = ../../../libs/GLee/include/GLee.h; sourceTree = SOURCE_ROOT; };
+		E45BE0A90E8CC67C009D7055 /* GLee.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = GLee.a; path = ../../../libs/GLee/lib/osx/GLee.a; sourceTree = SOURCE_ROOT; };
+		E45BE2E00E8CC69C009D7055 /* RtAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RtAudio.h; path = ../../../libs/rtAudio/include/RtAudio.h; sourceTree = SOURCE_ROOT; };
+		E45BE2E10E8CC69C009D7055 /* RtError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RtError.h; path = ../../../libs/rtAudio/include/RtError.h; sourceTree = SOURCE_ROOT; };
+		E45BE2E30E8CC69C009D7055 /* rtAudio.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = rtAudio.a; path = ../../../libs/rtAudio/lib/osx/rtAudio.a; sourceTree = SOURCE_ROOT; };
+		E45BE9710E8CC7DD009D7055 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
+		E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
+		E45BE9730E8CC7DD009D7055 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = /System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<absolute>"; };
+		E45BE9740E8CC7DD009D7055 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		E45BE9750E8CC7DD009D7055 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = /System/Library/Frameworks/CoreAudio.framework; sourceTree = "<absolute>"; };
+		E45BE9760E8CC7DD009D7055 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
+		E45BE9770E8CC7DD009D7055 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
+		E45BE9790E8CC7DD009D7055 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		E45BE97A0E8CC7DD009D7055 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
+		E4B69B5B0A3A1756003C02F2 /* emptyExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = emptyExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1E0A3A1BDC003C02F2 /* kinectWeb.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = kinectWeb.cpp; sourceTree = "<group>"; };
+		E4B69E1F0A3A1BDC003C02F2 /* kinectWeb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kinectWeb.h; sourceTree = "<group>"; };
+		E4C2421610CC549C004149E2 /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
+		E4C2424410CC5A17004149E2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		E4C2424510CC5A17004149E2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		E4C2424610CC5A17004149E2 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		E4C2425F10CC5A78004149E2 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = SOURCE_ROOT; };
+		E4C2427A10CC5B66004149E2 /* CppUnit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = CppUnit.a; path = ../../../libs/poco/lib/osx/CppUnit.a; sourceTree = SOURCE_ROOT; };
+		E4C2427B10CC5B66004149E2 /* PocoFoundation.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = PocoFoundation.a; path = ../../../libs/poco/lib/osx/PocoFoundation.a; sourceTree = SOURCE_ROOT; };
+		E4C2427C10CC5B66004149E2 /* PocoNet.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = PocoNet.a; path = ../../../libs/poco/lib/osx/PocoNet.a; sourceTree = SOURCE_ROOT; };
+		E4C2427D10CC5B66004149E2 /* PocoUtil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = PocoUtil.a; path = ../../../libs/poco/lib/osx/PocoUtil.a; sourceTree = SOURCE_ROOT; };
+		E4C2427E10CC5B66004149E2 /* PocoXML.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = PocoXML.a; path = ../../../libs/poco/lib/osx/PocoXML.a; sourceTree = SOURCE_ROOT; };
+		E4C2429310CC5C38004149E2 /* freetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = freetype.a; path = ../../../libs/freetype/lib/osx/freetype.a; sourceTree = SOURCE_ROOT; };
+		E4C242CC10CC650E004149E2 /* libfmodex.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfmodex.dylib; path = ../../../libs/fmodex/lib/osx/libfmodex.dylib; sourceTree = SOURCE_ROOT; };
+		E4C246D910CCAE22004149E2 /* freeimage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = freeimage.a; path = ../../../libs/FreeImage/lib/osx/freeimage.a; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4B69B590A3A1756003C02F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4C2422B10CC554B004149E2 /* openFrameworksDebug.a in Frameworks */,
+				E45BE0AA0E8CC67C009D7055 /* GLee.a in Frameworks */,
+				E45BE2E40E8CC69C009D7055 /* rtAudio.a in Frameworks */,
+				E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */,
+				E45BE97C0E8CC7DD009D7055 /* ApplicationServices.framework in Frameworks */,
+				E45BE97D0E8CC7DD009D7055 /* AudioToolbox.framework in Frameworks */,
+				E45BE97E0E8CC7DD009D7055 /* Carbon.framework in Frameworks */,
+				E45BE97F0E8CC7DD009D7055 /* CoreAudio.framework in Frameworks */,
+				E45BE9800E8CC7DD009D7055 /* CoreFoundation.framework in Frameworks */,
+				E45BE9810E8CC7DD009D7055 /* CoreServices.framework in Frameworks */,
+				E45BE9830E8CC7DD009D7055 /* OpenGL.framework in Frameworks */,
+				E45BE9840E8CC7DD009D7055 /* QuickTime.framework in Frameworks */,
+				E4C2424710CC5A17004149E2 /* AppKit.framework in Frameworks */,
+				E4C2424810CC5A17004149E2 /* Cocoa.framework in Frameworks */,
+				E4C2424910CC5A17004149E2 /* IOKit.framework in Frameworks */,
+				E4C2426610CC5A78004149E2 /* GLUT.framework in Frameworks */,
+				E4C2427F10CC5B66004149E2 /* CppUnit.a in Frameworks */,
+				E4C2428010CC5B66004149E2 /* PocoFoundation.a in Frameworks */,
+				E4C2428110CC5B66004149E2 /* PocoNet.a in Frameworks */,
+				E4C2428210CC5B66004149E2 /* PocoUtil.a in Frameworks */,
+				E4C2428310CC5B66004149E2 /* PocoXML.a in Frameworks */,
+				E4C2429410CC5C38004149E2 /* freetype.a in Frameworks */,
+				E4C242CD10CC650E004149E2 /* libfmodex.dylib in Frameworks */,
+				E4C246DA10CCAE22004149E2 /* freeimage.a in Frameworks */,
+				1601D09213B122A1007DC7E6 /* libzmq.dylib in Frameworks */,
+				1601D26713B21EC0007DC7E6 /* libnimCodecs.dylib in Frameworks */,
+				1601D26813B21EC0007DC7E6 /* libnimMockNodes.dylib in Frameworks */,
+				1601D26913B21EC0007DC7E6 /* libnimRecorder.dylib in Frameworks */,
+				1601D26A13B21EC0007DC7E6 /* libOpenNI.dylib in Frameworks */,
+				1601D26B13B21EC0007DC7E6 /* libusb-1.0.0.dylib in Frameworks */,
+				1601D26C13B21EC0007DC7E6 /* libXnCore.dylib in Frameworks */,
+				1601D26D13B21EC0007DC7E6 /* libXnDDK.dylib in Frameworks */,
+				1601D26E13B21EC0007DC7E6 /* libXnDeviceFile.dylib in Frameworks */,
+				1601D26F13B21EC0007DC7E6 /* libXnDeviceSensorV2.dylib in Frameworks */,
+				1601D27013B21EC0007DC7E6 /* libXnFormats.dylib in Frameworks */,
+				1601D27113B21EC0007DC7E6 /* libXnVCNite.dylib in Frameworks */,
+				1601D27213B21EC0007DC7E6 /* libXnVFeatures.dylib in Frameworks */,
+				1601D27313B21EC0007DC7E6 /* libXnVHandGenerator.dylib in Frameworks */,
+				1601D27413B21EC0007DC7E6 /* libXnVNite.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1601D15C13B21E84007DC7E6 /* ofxOpenNI */ = {
+			isa = PBXGroup;
+			children = (
+				1601D25713B21EC0007DC7E6 /* lib */,
+				1601D17B13B21E84007DC7E6 /* include */,
+				1601D20713B21E84007DC7E6 /* src */,
+			);
+			name = ofxOpenNI;
+			path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI;
+			sourceTree = "<absolute>";
+		};
+		1601D17B13B21E84007DC7E6 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				1601D17C13B21E84007DC7E6 /* libusb */,
+				1601D17E13B21E84007DC7E6 /* nite */,
+				1601D1BD13B21E84007DC7E6 /* openni */,
+			);
+			name = include;
+			path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include;
+			sourceTree = "<absolute>";
+		};
+		1601D17C13B21E84007DC7E6 /* libusb */ = {
+			isa = PBXGroup;
+			children = (
+				1601D17D13B21E84007DC7E6 /* libusb.h */,
+			);
+			name = libusb;
+			path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/libusb;
+			sourceTree = "<absolute>";
+		};
+		1601D17E13B21E84007DC7E6 /* nite */ = {
+			isa = PBXGroup;
+			children = (
+				1601D17F13B21E84007DC7E6 /* XnCommon.h */,
+				1601D18013B21E84007DC7E6 /* XnV3DVector.h */,
+				1601D18113B21E84007DC7E6 /* XnVActivationMessage.h */,
+				1601D18213B21E84007DC7E6 /* XnVBroadcaster.h */,
+				1601D18313B21E84007DC7E6 /* XnVCCMessage.h */,
+				1601D18413B21E84007DC7E6 /* XnVCircle.h */,
+				1601D18513B21E84007DC7E6 /* XnVCircleDetector.h */,
+				1601D18613B21E84007DC7E6 /* XnVClickableVirtualPlane.h */,
+				1601D18713B21E84007DC7E6 /* XnVComplexMessage.h */,
+				1601D18813B21E84007DC7E6 /* XnVDepthControl.h */,
+				1601D18913B21E84007DC7E6 /* XnVDepthGenerator.h */,
+				1601D18A13B21E84007DC7E6 /* XnVDepthMessage.h */,
+				1601D18B13B21E84007DC7E6 /* XnVDeviceControl.h */,
+				1601D18C13B21E84007DC7E6 /* XnVDeviceFilter.h */,
+				1601D18D13B21E84007DC7E6 /* XnVDeviceGenerator.h */,
+				1601D18E13B21E84007DC7E6 /* XnVDeviceMessage.h */,
+				1601D18F13B21E84007DC7E6 /* XnVDirection.h */,
+				1601D19013B21E84007DC7E6 /* XnVFilter.h */,
+				1601D19113B21E84007DC7E6 /* XnVFlowRouter.h */,
+				1601D19213B21E84007DC7E6 /* XnVGesture.h */,
+				1601D19313B21E84007DC7E6 /* XnVHandle.h */,
+				1601D19413B21E84007DC7E6 /* XnVHandPointContext.h */,
+				1601D19513B21E84007DC7E6 /* XnVImageGenerator.h */,
+				1601D19613B21E84007DC7E6 /* XnVImageMessage.h */,
+				1601D19713B21E84007DC7E6 /* XnVMathCommon.h */,
+				1601D19813B21E84007DC7E6 /* XnVMessage.h */,
+				1601D19913B21E84007DC7E6 /* XnVMessageGenerator.h */,
+				1601D19A13B21E84007DC7E6 /* XnVMessageListener.h */,
+				1601D19B13B21E84007DC7E6 /* XnVMessageMux.h */,
+				1601D19C13B21E84007DC7E6 /* XnVMultiItemHysteresis1D.h */,
+				1601D19D13B21E84007DC7E6 /* XnVMultiItemHysteresis2D.h */,
+				1601D19E13B21E84007DC7E6 /* XnVMultipleHands.h */,
+				1601D19F13B21E84007DC7E6 /* XnVMultiProcessFlowClient.h */,
+				1601D1A013B21E84007DC7E6 /* XnVMultiProcessFlowServer.h */,
+				1601D1A113B21E84007DC7E6 /* XnVNite.h */,
+				1601D1A213B21E84007DC7E6 /* XnVNiteControls.h */,
+				1601D1A313B21E84007DC7E6 /* XnVNiteDefs.h */,
+				1601D1A413B21E84007DC7E6 /* XnVNiteEvents.h */,
+				1601D1A513B21E84007DC7E6 /* XnVNiteFramework.h */,
+				1601D1A613B21E84007DC7E6 /* XnVNiteLog.h */,
+				1601D1A713B21E84007DC7E6 /* XnVNiteStatus.h */,
+				1601D1A813B21E84007DC7E6 /* XnVNiteVersion.h */,
+				1601D1A913B21E84007DC7E6 /* XnVPointArea.h */,
+				1601D1AA13B21E84007DC7E6 /* XnVPointControl.h */,
+				1601D1AB13B21E84007DC7E6 /* XnVPointDenoiser.h */,
+				1601D1AC13B21E84007DC7E6 /* XnVPointFilter.h */,
+				1601D1AD13B21E84007DC7E6 /* XnVPointMessage.h */,
+				1601D1AE13B21E84007DC7E6 /* XnVPointTracker.h */,
+				1601D1AF13B21E84007DC7E6 /* XnVPushDetector.h */,
+				1601D1B013B21E84007DC7E6 /* XnVSelectableSlider1D.h */,
+				1601D1B113B21E84007DC7E6 /* XnVSelectableSlider2D.h */,
+				1601D1B213B21E84007DC7E6 /* XnVSessionGenerator.h */,
+				1601D1B313B21E84007DC7E6 /* XnVSessionListener.h */,
+				1601D1B413B21E84007DC7E6 /* XnVSessionManager.h */,
+				1601D1B513B21E84007DC7E6 /* XnVSessionMessage.h */,
+				1601D1B613B21E84007DC7E6 /* XnVSlider1D.h */,
+				1601D1B713B21E84007DC7E6 /* XnVSlider2D.h */,
+				1601D1B813B21E84007DC7E6 /* XnVSlider3D.h */,
+				1601D1B913B21E84007DC7E6 /* XnVSteadyDetector.h */,
+				1601D1BA13B21E84007DC7E6 /* XnVSwipeDetector.h */,
+				1601D1BB13B21E84007DC7E6 /* XnVVirtualCoordinates.h */,
+				1601D1BC13B21E84007DC7E6 /* XnVWaveDetector.h */,
+			);
+			name = nite;
+			path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/nite;
+			sourceTree = "<absolute>";
+		};
+		1601D1BD13B21E84007DC7E6 /* openni */ = {
+			isa = PBXGroup;
+			children = (
+				1601D1BE13B21E84007DC7E6 /* IXnNodeAllocator.h */,
+				1601D1BF13B21E84007DC7E6 /* Linux-Arm */,
+				1601D1C113B21E84007DC7E6 /* Linux-x86 */,
+				1601D1C413B21E84007DC7E6 /* MacOSX */,
+				1601D1C613B21E84007DC7E6 /* Win32 */,
+				1601D1C913B21E84007DC7E6 /* XnBaseNode.h */,
+				1601D1CA13B21E84007DC7E6 /* XnCallback.h */,
+				1601D1CB13B21E84007DC7E6 /* XnCodecIDs.h */,
+				1601D1CC13B21E84007DC7E6 /* XnContext.h */,
+				1601D1CD13B21E84007DC7E6 /* XnCppWrapper.h */,
+				1601D1CE13B21E84007DC7E6 /* XnDataTypes.h */,
+				1601D1CF13B21E84007DC7E6 /* XnEnumerationErrors.h */,
+				1601D1D013B21E84007DC7E6 /* XnEvent.h */,
+				1601D1D113B21E84007DC7E6 /* XnFPSCalculator.h */,
+				1601D1D213B21E84007DC7E6 /* XnGeneralBuffer.h */,
+				1601D1D313B21E84007DC7E6 /* XnHash.h */,
+				1601D1D413B21E84007DC7E6 /* XnInternalDefs.h */,
+				1601D1D513B21E84007DC7E6 /* XnLicensing.h */,
+				1601D1D613B21E84007DC7E6 /* XnList.h */,
+				1601D1D713B21E84007DC7E6 /* XnLog.h */,
+				1601D1D813B21E84007DC7E6 /* XnMacros.h */,
+				1601D1D913B21E84007DC7E6 /* XnModuleCppInterface.h */,
+				1601D1DA13B21E84007DC7E6 /* XnModuleCppRegistratration.h */,
+				1601D1DB13B21E84007DC7E6 /* XnModuleInterface.h */,
+				1601D1DC13B21E84007DC7E6 /* XnNode.h */,
+				1601D1DD13B21E84007DC7E6 /* XnNodeAllocator.h */,
+				1601D1DE13B21E84007DC7E6 /* XnOpenNI.h */,
+				1601D1DF13B21E84007DC7E6 /* XnOS.h */,
+				1601D1E013B21E84007DC7E6 /* XnOSCpp.h */,
+				1601D1E113B21E84007DC7E6 /* XnPlatform.h */,
+				1601D1E213B21E84007DC7E6 /* XnPrdNode.h */,
+				1601D1E313B21E84007DC7E6 /* XnPrdNodeInfo.h */,
+				1601D1E413B21E84007DC7E6 /* XnPrdNodeInfoList.h */,
+				1601D1E513B21E84007DC7E6 /* XnProfiling.h */,
+				1601D1E613B21E84007DC7E6 /* XnPropNames.h */,
+				1601D1E713B21E84007DC7E6 /* XnQueries.h */,
+				1601D1E813B21E84007DC7E6 /* XnQueue.h */,
+				1601D1E913B21E84007DC7E6 /* XnScheduler.h */,
+				1601D1EA13B21E84007DC7E6 /* XnStack.h */,
+				1601D1EB13B21E84007DC7E6 /* XnStatus.h */,
+				1601D1EC13B21E84007DC7E6 /* XnStatusCodes.h */,
+				1601D1ED13B21E84007DC7E6 /* XnStatusRegister.h */,
+				1601D1EE13B21E84007DC7E6 /* XnStringsHash.h */,
+				1601D1EF13B21E84007DC7E6 /* XnThreadSafeQueue.h */,
+				1601D1F013B21E84007DC7E6 /* XnTypes.h */,
+				1601D1F113B21E84007DC7E6 /* XnUSB.h */,
+				1601D1F213B21E84007DC7E6 /* XnUtils.h */,
+				1601D1F313B21E84007DC7E6 /* XnVersion.h */,
+			);
+			name = openni;
+			path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni;
+			sourceTree = "<absolute>";
+		};
+		1601D1BF13B21E84007DC7E6 /* Linux-Arm */ = {
+			isa = PBXGroup;
+			children = (
+				1601D1C013B21E84007DC7E6 /* XnPlatformLinux-Arm.h */,
+			);
+			name = "Linux-Arm";
+			path = "/Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/Linux-Arm";
+			sourceTree = "<absolute>";
+		};
+		1601D1C113B21E84007DC7E6 /* Linux-x86 */ = {
+			isa = PBXGroup;
+			children = (
+				1601D1C213B21E84007DC7E6 /* XnOSLinux-x86.h */,
+				1601D1C313B21E84007DC7E6 /* XnPlatformLinux-x86.h */,
+			);
+			name = "Linux-x86";
+			path = "/Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/Linux-x86";
+			sourceTree = "<absolute>";
+		};
+		1601D1C413B21E84007DC7E6 /* MacOSX */ = {
+			isa = PBXGroup;
+			children = (
+				1601D1C513B21E84007DC7E6 /* XnPlatformMacOSX.h */,
+			);
+			name = MacOSX;
+			path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/MacOSX;
+			sourceTree = "<absolute>";
+		};
+		1601D1C613B21E84007DC7E6 /* Win32 */ = {
+			isa = PBXGroup;
+			children = (
+				1601D1C713B21E84007DC7E6 /* XnOSWin32.h */,
+				1601D1C813B21E84007DC7E6 /* XnPlatformWin32.h */,
+			);
+			name = Win32;
+			path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/include/openni/Win32;
+			sourceTree = "<absolute>";
+		};
+		1601D20713B21E84007DC7E6 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				1601D20813B21E84007DC7E6 /* ofxDepthGenerator.cpp */,
+				1601D20913B21E84007DC7E6 /* ofxDepthGenerator.h */,
+				1601D20A13B21E84007DC7E6 /* ofxGestureGenerator.cpp */,
+				1601D20B13B21E84007DC7E6 /* ofxGestureGenerator.h */,
+				1601D20C13B21E84007DC7E6 /* ofxHandGenerator.cpp */,
+				1601D20D13B21E84007DC7E6 /* ofxHandGenerator.h */,
+				1601D20E13B21E84007DC7E6 /* ofxHardwareDriver.cpp */,
+				1601D20F13B21E84007DC7E6 /* ofxHardwareDriver.h */,
+				1601D21013B21E84007DC7E6 /* ofxImageGenerator.cpp */,
+				1601D21113B21E84007DC7E6 /* ofxImageGenerator.h */,
+				1601D21213B21E84007DC7E6 /* ofxIRGenerator.cpp */,
+				1601D21313B21E84007DC7E6 /* ofxIRGenerator.h */,
+				1601D21413B21E84007DC7E6 /* ofxOpenNI.h */,
+				1601D21513B21E84007DC7E6 /* ofxOpenNIContext.cpp */,
+				1601D21613B21E84007DC7E6 /* ofxOpenNIContext.h */,
+				1601D21713B21E84007DC7E6 /* ofxOpenNIMacros.h */,
+				1601D21813B21E84007DC7E6 /* ofxOpenNIRecorder.cpp */,
+				1601D21913B21E84007DC7E6 /* ofxOpenNIRecorder.h */,
+				1601D21A13B21E84007DC7E6 /* ofxTrackedHand.cpp */,
+				1601D21B13B21E84007DC7E6 /* ofxTrackedHand.h */,
+				1601D21C13B21E84007DC7E6 /* ofxTrackedUser.cpp */,
+				1601D21D13B21E84007DC7E6 /* ofxTrackedUser.h */,
+				1601D21E13B21E84007DC7E6 /* ofxUserGenerator.cpp */,
+				1601D21F13B21E84007DC7E6 /* ofxUserGenerator.h */,
+			);
+			name = src;
+			path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/src;
+			sourceTree = "<absolute>";
+		};
+		1601D25713B21EC0007DC7E6 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				1601D25813B21EC0007DC7E6 /* change_exec_paths.sh */,
+				1601D25913B21EC0007DC7E6 /* libnimCodecs.dylib */,
+				1601D25A13B21EC0007DC7E6 /* libnimMockNodes.dylib */,
+				1601D25B13B21EC0007DC7E6 /* libnimRecorder.dylib */,
+				1601D25C13B21EC0007DC7E6 /* libOpenNI.dylib */,
+				1601D25D13B21EC0007DC7E6 /* libusb-1.0.0.dylib */,
+				1601D25E13B21EC0007DC7E6 /* libXnCore.dylib */,
+				1601D25F13B21EC0007DC7E6 /* libXnDDK.dylib */,
+				1601D26013B21EC0007DC7E6 /* libXnDeviceFile.dylib */,
+				1601D26113B21EC0007DC7E6 /* libXnDeviceSensorV2.dylib */,
+				1601D26213B21EC0007DC7E6 /* libXnFormats.dylib */,
+				1601D26313B21EC0007DC7E6 /* libXnVCNite.dylib */,
+				1601D26413B21EC0007DC7E6 /* libXnVFeatures.dylib */,
+				1601D26513B21EC0007DC7E6 /* libXnVHandGenerator.dylib */,
+				1601D26613B21EC0007DC7E6 /* libXnVNite.dylib */,
+			);
+			name = lib;
+			path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/bin/data/openni/lib;
+			sourceTree = "<absolute>";
+		};
+		1601D35013B264BA007DC7E6 /* server */ = {
+			isa = PBXGroup;
+			children = (
+				1601D35213B264BA007DC7E6 /* client.html */,
+				1601D35313B264BA007DC7E6 /* client.js */,
+				1601D35413B264BA007DC7E6 /* jquery-1.4.4.min.js */,
+				1601D35513B264BA007DC7E6 /* server.js */,
+				1601D35613B264BA007DC7E6 /* socket.io.js */,
+				1601D35713B264BA007DC7E6 /* style.css */,
+			);
+			name = server;
+			path = /Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/server;
+			sourceTree = "<absolute>";
+		};
+		BB4B014C10F69532006C3DED /* addons */ = {
+			isa = PBXGroup;
+			children = (
+				1601D15C13B21E84007DC7E6 /* ofxOpenNI */,
+			);
+			name = addons;
+			sourceTree = "<group>";
+		};
+		E45BE0360E8CC5DE009D7055 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				1601D09113B122A1007DC7E6 /* libzmq.dylib */,
+				E45BEED60E8CCB34009D7055 /* core */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+		E45BE0370E8CC647009D7055 /* freeimage */ = {
+			isa = PBXGroup;
+			children = (
+				E4C246D810CCAE22004149E2 /* osx */,
+				E45BE0380E8CC647009D7055 /* include */,
+			);
+			name = freeimage;
+			path = ../../../libs/freeimage;
+			sourceTree = SOURCE_ROOT;
+		};
+		E45BE0380E8CC647009D7055 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				E45BE0390E8CC647009D7055 /* FreeImage.h */,
+			);
+			name = include;
+			path = ../../../libs/freeimage/include;
+			sourceTree = SOURCE_ROOT;
+		};
+		E45BE03D0E8CC650009D7055 /* fmodex */ = {
+			isa = PBXGroup;
+			children = (
+				E45BE03E0E8CC650009D7055 /* inc */,
+				E4C2428E10CC5C18004149E2 /* osx */,
+			);
+			name = fmodex;
+			path = ../../../libs/fmodex;
+			sourceTree = SOURCE_ROOT;
+		};
+		E45BE03E0E8CC650009D7055 /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				E45BE03F0E8CC650009D7055 /* fmod.h */,
+				E45BE0400E8CC650009D7055 /* fmod.hpp */,
+				E45BE0410E8CC650009D7055 /* fmod_codec.h */,
+				E45BE0420E8CC650009D7055 /* fmod_dsp.h */,
+				E45BE0430E8CC650009D7055 /* fmod_errors.h */,
+				E45BE0440E8CC650009D7055 /* fmod_output.h */,
+			);
+			name = inc;
+			path = ../../../libs/fmodex/include;
+			sourceTree = SOURCE_ROOT;
+		};
+		E45BE0480E8CC657009D7055 /* core libraries */ = {
+			isa = PBXGroup;
+			children = (
+				E4C2425B10CC5A78004149E2 /* glut */,
+				E45BEC7B0E8CC911009D7055 /* poco */,
+				E45BE2D50E8CC69C009D7055 /* rtAudio */,
+				E45BE0A50E8CC67C009D7055 /* GLee */,
+				E45BE0490E8CC676009D7055 /* freetype */,
+				E45BE03D0E8CC650009D7055 /* fmodex */,
+				E45BE0370E8CC647009D7055 /* freeimage */,
+			);
+			name = "core libraries";
+			sourceTree = "<group>";
+		};
+		E45BE0490E8CC676009D7055 /* freetype */ = {
+			isa = PBXGroup;
+			children = (
+				E4C2429210CC5C38004149E2 /* osx */,
+			);
+			name = freetype;
+			path = ../../../libs/freetype;
+			sourceTree = SOURCE_ROOT;
+		};
+		E45BE0A50E8CC67C009D7055 /* GLee */ = {
+			isa = PBXGroup;
+			children = (
+				E45BE0A60E8CC67C009D7055 /* include */,
+				E45BE0A80E8CC67C009D7055 /* lib */,
+			);
+			name = GLee;
+			path = ../../../libs/GLee;
+			sourceTree = SOURCE_ROOT;
+		};
+		E45BE0A60E8CC67C009D7055 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				E45BE0A70E8CC67C009D7055 /* GLee.h */,
+			);
+			name = include;
+			path = ../../../libs/GLee/include;
+			sourceTree = SOURCE_ROOT;
+		};
+		E45BE0A80E8CC67C009D7055 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				E45BE0A90E8CC67C009D7055 /* GLee.a */,
+			);
+			name = lib;
+			path = ../../../libs/GLee/lib/osx;
+			sourceTree = SOURCE_ROOT;
+		};
+		E45BE2D50E8CC69C009D7055 /* rtAudio */ = {
+			isa = PBXGroup;
+			children = (
+				E45BE2D60E8CC69C009D7055 /* include */,
+				E45BE2E20E8CC69C009D7055 /* lib */,
+			);
+			name = rtAudio;
+			path = ../../../libs/rtAudio;
+			sourceTree = SOURCE_ROOT;
+		};
+		E45BE2D60E8CC69C009D7055 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				E45BE2D70E8CC69C009D7055 /* asio */,
+				E45BE2E00E8CC69C009D7055 /* RtAudio.h */,
+				E45BE2E10E8CC69C009D7055 /* RtError.h */,
+			);
+			name = include;
+			path = ../../../libs/rtAudio/include;
+			sourceTree = SOURCE_ROOT;
+		};
+		E45BE2D70E8CC69C009D7055 /* asio */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = asio;
+			path = ../../../libs/rtAudio/include/asio;
+			sourceTree = SOURCE_ROOT;
+		};
+		E45BE2E20E8CC69C009D7055 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				E45BE2E30E8CC69C009D7055 /* rtAudio.a */,
+			);
+			name = lib;
+			path = ../../../libs/rtAudio/lib/osx;
+			sourceTree = SOURCE_ROOT;
+		};
+		E45BE5980E8CC70C009D7055 /* core frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4C2424410CC5A17004149E2 /* AppKit.framework */,
+				E4C2424510CC5A17004149E2 /* Cocoa.framework */,
+				E4C2424610CC5A17004149E2 /* IOKit.framework */,
+				E45BE9710E8CC7DD009D7055 /* AGL.framework */,
+				E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */,
+				E45BE9730E8CC7DD009D7055 /* AudioToolbox.framework */,
+				E45BE9740E8CC7DD009D7055 /* Carbon.framework */,
+				E45BE9750E8CC7DD009D7055 /* CoreAudio.framework */,
+				E45BE9760E8CC7DD009D7055 /* CoreFoundation.framework */,
+				E45BE9770E8CC7DD009D7055 /* CoreServices.framework */,
+				E45BE9790E8CC7DD009D7055 /* OpenGL.framework */,
+				E45BE97A0E8CC7DD009D7055 /* QuickTime.framework */,
+			);
+			name = "core frameworks";
+			sourceTree = "<group>";
+		};
+		E45BEC7B0E8CC911009D7055 /* poco */ = {
+			isa = PBXGroup;
+			children = (
+				E4C2427910CC5B66004149E2 /* osx */,
+			);
+			name = poco;
+			path = ../../../libs/poco;
+			sourceTree = SOURCE_ROOT;
+		};
+		E45BEED60E8CCB34009D7055 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				E45BE0480E8CC657009D7055 /* core libraries */,
+				E45BE5980E8CC70C009D7055 /* core frameworks */,
+			);
+			name = core;
+			sourceTree = "<group>";
+		};
+		E4B69B4A0A3A1720003C02F2 = {
+			isa = PBXGroup;
+			children = (
+				1601D35013B264BA007DC7E6 /* server */,
+				E4B69B5B0A3A1756003C02F2 /* emptyExample.app */,
+				E4B69E1C0A3A1BDC003C02F2 /* src */,
+				E4C2422310CC54B6004149E2 /* openFrameworks */,
+				BB4B014C10F69532006C3DED /* addons */,
+				E45BE0360E8CC5DE009D7055 /* libs */,
+			);
+			sourceTree = "<group>";
+		};
+		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
+				E4B69E1E0A3A1BDC003C02F2 /* kinectWeb.cpp */,
+				E4B69E1F0A3A1BDC003C02F2 /* kinectWeb.h */,
+			);
+			path = src;
+			sourceTree = SOURCE_ROOT;
+		};
+		E4C2421710CC549C004149E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4C2421E10CC549C004149E2 /* openFrameworksDebug.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4C2422310CC54B6004149E2 /* openFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4C2421610CC549C004149E2 /* openFrameworksLib.xcodeproj */,
+			);
+			name = openFrameworks;
+			sourceTree = "<group>";
+		};
+		E4C2425B10CC5A78004149E2 /* glut */ = {
+			isa = PBXGroup;
+			children = (
+				E4C2425D10CC5A78004149E2 /* lib */,
+			);
+			name = glut;
+			path = ../../../libs/glut;
+			sourceTree = SOURCE_ROOT;
+		};
+		E4C2425D10CC5A78004149E2 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				E4C2425E10CC5A78004149E2 /* osx */,
+			);
+			name = lib;
+			path = ../../../libs/glut/lib;
+			sourceTree = SOURCE_ROOT;
+		};
+		E4C2425E10CC5A78004149E2 /* osx */ = {
+			isa = PBXGroup;
+			children = (
+				E4C2425F10CC5A78004149E2 /* GLUT.framework */,
+			);
+			name = osx;
+			path = ../../../libs/glut/lib/osx;
+			sourceTree = SOURCE_ROOT;
+		};
+		E4C2427910CC5B66004149E2 /* osx */ = {
+			isa = PBXGroup;
+			children = (
+				E4C2427A10CC5B66004149E2 /* CppUnit.a */,
+				E4C2427B10CC5B66004149E2 /* PocoFoundation.a */,
+				E4C2427C10CC5B66004149E2 /* PocoNet.a */,
+				E4C2427D10CC5B66004149E2 /* PocoUtil.a */,
+				E4C2427E10CC5B66004149E2 /* PocoXML.a */,
+			);
+			name = osx;
+			path = ../../../libs/poco/lib/osx;
+			sourceTree = SOURCE_ROOT;
+		};
+		E4C2428E10CC5C18004149E2 /* osx */ = {
+			isa = PBXGroup;
+			children = (
+				E4C242CC10CC650E004149E2 /* libfmodex.dylib */,
+			);
+			name = osx;
+			path = ../../../libs/fmodex/lib/osx;
+			sourceTree = SOURCE_ROOT;
+		};
+		E4C2429210CC5C38004149E2 /* osx */ = {
+			isa = PBXGroup;
+			children = (
+				E4C2429310CC5C38004149E2 /* freetype.a */,
+			);
+			name = osx;
+			path = ../../../libs/freetype/lib/osx;
+			sourceTree = SOURCE_ROOT;
+		};
+		E4C246D810CCAE22004149E2 /* osx */ = {
+			isa = PBXGroup;
+			children = (
+				E4C246D910CCAE22004149E2 /* freeimage.a */,
+			);
+			name = osx;
+			path = ../../../libs/FreeImage/lib/osx;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4B69B5A0A3A1756003C02F2 /* emptyExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "emptyExample" */;
+			buildPhases = (
+				E4B69B580A3A1756003C02F2 /* Sources */,
+				E4B69B590A3A1756003C02F2 /* Frameworks */,
+				E4B6FFFD0C3F9AB9008CF71C /* ShellScript */,
+				E4C2427710CC5ABF004149E2 /* CopyFiles */,
+				E4C2444710CC769B004149E2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4C2422810CC54DA004149E2 /* PBXTargetDependency */,
+			);
+			name = emptyExample;
+			productName = myOFApp;
+			productReference = E4B69B5B0A3A1756003C02F2 /* emptyExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4B69B4C0A3A1720003C02F2 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "browserInteg" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = E4B69B4A0A3A1720003C02F2;
+			productRefGroup = E4B69B4A0A3A1720003C02F2;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E4C2421710CC549C004149E2 /* Products */;
+					ProjectRef = E4C2421610CC549C004149E2 /* openFrameworksLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				E4B69B5A0A3A1756003C02F2 /* emptyExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E4C2421E10CC549C004149E2 /* openFrameworksDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = openFrameworksDebug.a;
+			remoteRef = E4C2421D10CC549C004149E2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E4B6FFFD0C3F9AB9008CF71C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp -f ../../../libs/fmodex/lib/osx/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/libfmodex.dylib\"\ninstall_name_tool -change ./libfmodex.dylib @executable_path/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\" ";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4B69B580A3A1756003C02F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
+				E4B69E210A3A1BDC003C02F2 /* kinectWeb.cpp in Sources */,
+				1601D23B13B21E85007DC7E6 /* ofxDepthGenerator.cpp in Sources */,
+				1601D23C13B21E85007DC7E6 /* ofxGestureGenerator.cpp in Sources */,
+				1601D23D13B21E85007DC7E6 /* ofxHandGenerator.cpp in Sources */,
+				1601D23E13B21E85007DC7E6 /* ofxHardwareDriver.cpp in Sources */,
+				1601D23F13B21E85007DC7E6 /* ofxImageGenerator.cpp in Sources */,
+				1601D24013B21E85007DC7E6 /* ofxIRGenerator.cpp in Sources */,
+				1601D24113B21E85007DC7E6 /* ofxOpenNIContext.cpp in Sources */,
+				1601D24213B21E85007DC7E6 /* ofxOpenNIRecorder.cpp in Sources */,
+				1601D24313B21E85007DC7E6 /* ofxTrackedHand.cpp in Sources */,
+				1601D24413B21E85007DC7E6 /* ofxTrackedUser.cpp in Sources */,
+				1601D24513B21E85007DC7E6 /* ofxUserGenerator.cpp in Sources */,
+				1601D35813B264BA007DC7E6 /* client.js in Sources */,
+				1601D35913B264BA007DC7E6 /* jquery-1.4.4.min.js in Sources */,
+				1601D35A13B264BA007DC7E6 /* server.js in Sources */,
+				1601D35B13B264BA007DC7E6 /* socket.io.js in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4C2422810CC54DA004149E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = openFrameworks;
+			targetProxy = E4C2422710CC54DA004149E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E4B27CA010CBF8A600536013 /* ReleaseUniversal */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
+				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					"../../../libs/openFrameworks/**",
+					../../../libs/freetype/include/,
+					../../../libs/freetype/include/freetype2,
+					../../../libs/poco/include,
+					../../../addons/,
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-D__MACOSX_CORE__",
+					"-lpthread",
+				);
+				OTHER_LDFLAGS = "";
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = ReleaseUniversal;
+		};
+		E4B27CA110CBF8A600536013 /* ReleaseUniversal */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G4;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				INFOPLIST_FILE = "openFrameworks-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_6)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_7)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_8)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_9)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_10)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_11)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_12)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_13)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_14)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_15)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_3)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_7)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_8)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_4)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_5)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_6)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_7)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_8)",
+					/opt/local/lib,
+					/Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/mac/copy_to_data_openni_path/lib,
+					/Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/win/copy_to_data_openni_path/lib,
+					/Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/bin/data/openni/lib,
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../../../addons/ofxOpenCv/libs/opencv/lib/osx\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)/../../../addons/ofxOpenNI/mac/copy_to_data_path/openni/lib\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_3 = "\"$(SRCROOT)/bin/data/openni/lib\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_4 = "\"$(SRCROOT)/bin/data/openni/lib\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_5 = "\"/Volumes/Mac OS X Install ESD/bin/data/openni/lib\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_6 = "\"/Volumes/Mac OS X Install ESD/bin/data/openni/lib/oldDrivers\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_7 = "\"$(SRCROOT)/bin/data/openni/lib\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_8 = "\"$(SRCROOT)/bin/data/openni/lib\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/freeimage/lib/osx\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_14 = "\"$(SRCROOT)/../../../libs/fmodex/lib/osx\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_15 = "\"$(SRCROOT)/../../../libs/freetype/lib/osx\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../../../libs/FreeImage/lib/osx\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/../../../addons/ofxOpenNI/mac/copy_to_data_openni_path/lib\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4 = "\"$(SRCROOT)/../../../libs/GLee/lib/osx\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5 = "\"$(SRCROOT)/../../../libs/poco/lib/osx\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_6 = "\"$(SRCROOT)/../../../libs/rtAudio/lib/osx\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_7 = "\"$(SRCROOT)/../../../addons/ofxOpenNI/win/copy_to_data_openni_path/lib\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_8 = "\"$(SRCROOT)/bin/data/openni/lib\"";
+				PREBINDING = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)Universal";
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = ReleaseUniversal;
+		};
+		E4B69B4E0A3A1720003C02F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH)";
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					"../../../libs/openFrameworks/**",
+					../../../libs/freetype/include/,
+					../../../libs/freetype/include/freetype2,
+					../../../libs/poco/include,
+					"../../../addons//**",
+					/opt/local/include/,
+				);
+				LIBRARY_SEARCH_PATHS = data/openni/libs/;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-D__MACOSX_CORE__",
+					"-lpthread",
+				);
+				OTHER_LDFLAGS = "";
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Debug;
+		};
+		E4B69B4F0A3A1720003C02F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH)";
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
+				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					"../../../libs/openFrameworks/**",
+					../../../libs/freetype/include/,
+					../../../libs/freetype/include/freetype2,
+					../../../libs/poco/include,
+					"../../../addons//**",
+					/opt/local/include/,
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-D__MACOSX_CORE__",
+					"-lpthread",
+				);
+				OTHER_LDFLAGS = "";
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Release;
+		};
+		E4B69B600A3A1757003C02F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G4;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				INFOPLIST_FILE = "openFrameworks-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_6)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_7)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_8)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_9)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_10)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_11)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_12)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_13)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_14)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_15)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_7)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_8)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_9)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_10)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_11)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_12)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_13)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_16)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_17)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_18)",
+					/opt/local/lib,
+					/Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/mac/copy_to_data_openni_path/lib,
+					/Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/win/copy_to_data_openni_path/lib,
+					/Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/bin/data/openni/lib,
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/freeimage/lib/osx\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_10 = "\"$(SRCROOT)/../../../addons/ofxOpenNI/win/copy_to_data_openni_path/lib\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_11 = "\"$(SRCROOT)/bin/data/openni/lib\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_12 = "\"$(SRCROOT)/bin/data/openni/lib\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_13 = "\"/Volumes/Mac OS X Install ESD/bin/data/openni/lib\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_14 = "\"$(SRCROOT)/../../../libs/fmodex/lib/osx\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_15 = "\"$(SRCROOT)/../../../libs/freetype/lib/osx\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_16 = "\"/Volumes/Mac OS X Install ESD/bin/data/openni/lib/oldDrivers\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_17 = "\"$(SRCROOT)/bin/data/openni/lib\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_18 = "\"$(SRCROOT)/bin/data/openni/lib\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../../../libs/FreeImage/lib/osx\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/../../../addons/ofxOpenCv/libs/opencv/lib/osx\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4 = "\"$(SRCROOT)/../../../libs/GLee/lib/osx\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5 = "\"$(SRCROOT)/../../../libs/poco/lib/osx\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_6 = "\"$(SRCROOT)/../../../libs/rtAudio/lib/osx\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_7 = "\"$(SRCROOT)/../../../addons/ofxOpenNI/mac/copy_to_data_path/openni/lib\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_8 = "\"$(SRCROOT)/bin/data/openni/lib\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_9 = "\"$(SRCROOT)/../../../addons/ofxOpenNI/mac/copy_to_data_openni_path/lib\"";
+				PREBINDING = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)Debug";
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		E4B69B610A3A1757003C02F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G4;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				INFOPLIST_FILE = "openFrameworks-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_6)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_7)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_8)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_9)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_10)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_11)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_12)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_13)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_14)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_15)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_3)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_7)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_8)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_4)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_5)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_6)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_7)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_8)",
+					/opt/local/lib,
+					/Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/mac/copy_to_data_openni_path/lib,
+					/Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/addons/ofxOpenNI/win/copy_to_data_openni_path/lib,
+					/Users/takashi/dev/lib/openFrameworks/apps/myApps/browserInteg/bin/data/openni/lib,
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../../../addons/ofxOpenCv/libs/opencv/lib/osx\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)/../../../addons/ofxOpenNI/mac/copy_to_data_path/openni/lib\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_3 = "\"$(SRCROOT)/bin/data/openni/lib\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_4 = "\"$(SRCROOT)/bin/data/openni/lib\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_5 = "\"/Volumes/Mac OS X Install ESD/bin/data/openni/lib\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_6 = "\"/Volumes/Mac OS X Install ESD/bin/data/openni/lib/oldDrivers\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_7 = "\"$(SRCROOT)/bin/data/openni/lib\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_8 = "\"$(SRCROOT)/bin/data/openni/lib\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/freeimage/lib/osx\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_14 = "\"$(SRCROOT)/../../../libs/fmodex/lib/osx\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_15 = "\"$(SRCROOT)/../../../libs/freetype/lib/osx\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../../../libs/FreeImage/lib/osx\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/../../../addons/ofxOpenNI/mac/copy_to_data_openni_path/lib\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4 = "\"$(SRCROOT)/../../../libs/GLee/lib/osx\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5 = "\"$(SRCROOT)/../../../libs/poco/lib/osx\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_6 = "\"$(SRCROOT)/../../../libs/rtAudio/lib/osx\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_7 = "\"$(SRCROOT)/../../../addons/ofxOpenNI/win/copy_to_data_openni_path/lib\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_8 = "\"$(SRCROOT)/bin/data/openni/lib\"";
+				PREBINDING = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "browserInteg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B69B4E0A3A1720003C02F2 /* Debug */,
+				E4B69B4F0A3A1720003C02F2 /* Release */,
+				E4B27CA010CBF8A600536013 /* ReleaseUniversal */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "emptyExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B69B600A3A1757003C02F2 /* Debug */,
+				E4B69B610A3A1757003C02F2 /* Release */,
+				E4B27CA110CBF8A600536013 /* ReleaseUniversal */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4B69B4C0A3A1720003C02F2 /* Project object */;
+}

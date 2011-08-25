@@ -1,0 +1,19 @@
+body {
+  background-color:#333;
+  color:#AAA;
+}
+
+input {
+  font-size:40px;
+  margin-top: 6px;
+}
+
+#angle {
+  font-size:17px;
+}
+
+#images img {
+  float : left;
+  width : 150px;
+  margin : 0 10px 10px 0;
+}

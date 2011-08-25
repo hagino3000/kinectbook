@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Kinect接続テスト</title>
+    <script type="text/javascript" src="./jquery-1.4.4.min.js" ></script>
+    <script type="text/javascript" src="./socket.io.js" ></script>
+    <script type="text/javascript" src="./client.js" ></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+  <body>
+
+    <!-- リアルタイムの深度画像を表示するエリア -->
+    <h2>Live View</h2>
+    <div style="float:left; width:340px;">
+      <canvas width="320" height="240" id="canvas"></canvas>
+    </div>
+    <div style="float:left; width:240px;">
+      <div id="angle">Current Angle: 0</div>
+      <input type="button" value="Tilt Angle UP" id="upBtn" ><br>
+      <input type="button" value="Tilt Angle Down" id="downBtn" >
+    </div>
+    <div style="clear:both;"></div>
+
+    <!-- 保存された画像を表示するエリア -->
+    <h2>User Detected Images</h2>
+    <div id="images">
+    </div>
+  </body>
+</html>
