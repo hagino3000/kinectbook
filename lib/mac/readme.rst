@@ -1,0 +1,1 @@
+これらはopenFrameworksのaddonsディレクトリに移動させてください。
