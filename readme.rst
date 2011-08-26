@@ -5,11 +5,10 @@ Kinect Hackers Manual Support Page
 現在は次のOSで動作確認を行なっています。
 
 - MacOS X 10.6 (Snow leoperd) + Xcode3.2.5
-- MacOS X 10.7 (lion) + Xcode4.1
 - Windows 7 (32bit)
 
-.. note::
-  MacOS lion + Xcode4.1では現状のままでは動作しないので対応を進めている所です。
+現状MacOS lion + Xcode4.1でopenFrameworks使っているサンプルが動作しません。
+修正ができ次第MacOS lion用のプロジェクトファイルをアップします。
 
 
 ライブラリのバージョン
@@ -23,6 +22,14 @@ OpenNI
 - SensorKinect 5.0.1.32 Unstable version - Apr 11th 2011
 - NITE 1.3.1
 
+OpenCV
+
+- 2.2 or 2.3
+
+openFrameworks
+
+- 0.062
+
 Kinect SDK for Windows
 
 - Beta1
@@ -31,6 +38,5 @@ libfreenect
 
 - commit 4a159f86ea91331c8e0f0532f688deebfbe18096 - Apr 28 2011
 
-.. note::
-  OpenNIがバージョンアップしているので動作確認ができ次第更新します。
+OpenNIがバージョンアップしているので動作確認ができ次第更新します。
 
