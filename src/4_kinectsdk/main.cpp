@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 
 // Windows.hがMSR_NuiApi.hの前に必要
 #include <Windows.h>
