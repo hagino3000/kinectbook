@@ -1,9 +1,5 @@
 ﻿#include <stdexcept>
-#ifdef WIN32
 #include <iostream>
-#else
-#include <iostream.h>
-#endif
 #include <XnCppWrapper.h>
 
 void errorCheck(XnStatus status, const char *msg) {
