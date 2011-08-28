@@ -5,7 +5,7 @@ void testApp::setup() {
 	ofSetWindowShape(640, 480);
 	ofBackground(0, 0, 0);
 
-	// ofxOpenNIã®åˆæœŸåŒ–
+	// ofxOpenNI‚Ì‰Šú‰»
 	ofxOpenNICtx.setupUsingXMLFile(ofToDataPath("myOpenNIConfig.xml", true));
 	depthGenetator.setup(&ofxOpenNICtx);
 	imageGenetator.setup(&ofxOpenNICtx);	
@@ -18,12 +18,12 @@ void testApp::setup() {
 
 void testApp::update(){
 	
-	// OpenNIãƒãƒ¼ãƒ‰ã®ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆ
+	// OpenNIƒm[ƒh‚ÌƒAƒbƒvƒf[ƒg
 	ofxOpenNICtx.update();
 	depthGenetator.update();
 	imageGenetator.update();	
 	
-	// æ¤œå‡ºã—ã¦ã„ã‚‹æ‰‹ã®åº§æ¨™ã‚’vectorã«å…¥ã‚Œã¦ä¿æŒã™ã‚‹
+	// ŒŸo‚µ‚Ä‚¢‚éè‚ÌÀ•W‚ğvector‚É“ü‚ê‚Ä•Û‚·‚é
 	int trackedHands = handGenerator.getNumTrackedHands();
 	for (int i=0; i<trackedHands; i++) {
 		ofxTrackedHand * hand = handGenerator.getHand(i);
@@ -32,7 +32,7 @@ void testApp::update(){
 											hand->projectPos.y, 
 											hand->projectPos.z);
 			handTrackedPoints.push_back(handPos);
-			// ãƒ©ãƒ³ãƒ€ãƒ ã®è‰²ã‚’ä½œã‚‹
+			// ƒ‰ƒ“ƒ_ƒ€‚ÌF‚ğì‚é
 			ofColor * col = new ofColor();
 			col->r = ofRandom(0, 255);
 			col->g = ofRandom(0, 255);
@@ -49,12 +49,12 @@ void testApp::draw(){
 	glEnable(GL_BLEND);
 	imageGenetator.draw(0, 0, 640, 480);
 	
-	// ä¿å­˜ã—ãŸæ‰‹ã®åº§æ¨™ã®è»Œè·¡ã«å††ã‚’æç”»ã™ã‚‹
+	// •Û‘¶‚µ‚½è‚ÌÀ•W‚Ì‹OÕ‚É‰~‚ğ•`‰æ‚·‚é
 	for (int i=0; i<handTrackedPoints.size(); i++) {
 		ofPoint * handPos = handTrackedPoints[i];
 		ofColor * col = handTrackedColors[i];
 		ofSetColor(col->r, col->g, col->b, 200);
-		// æ‰‹ã®è·é›¢ã§å¡—ã‚Šã¤ã¶ã™å¤§ãã•ã‚’å¤‰ãˆã‚‹
+		// è‚Ì‹——£‚Å“h‚è‚Â‚Ô‚·‘å‚«‚³‚ğ•Ï‚¦‚é
 		ofCircle(handPos->x, 
 				 handPos->y, 
 				 max(2000 - handPos->z, 400.0f)/500*7);

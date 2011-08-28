@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "detect_skeleton", "detect_skeleton.vcxproj", "{30B1C1E6-5EE1-3DF8-0E96-9BA94B7E5311}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30B1C1E6-5EE1-3DF8-0E96-9BA94B7E5311}.Debug|Win32.ActiveCfg = Debug|Win32
+		{30B1C1E6-5EE1-3DF8-0E96-9BA94B7E5311}.Debug|Win32.Build.0 = Debug|Win32
+		{30B1C1E6-5EE1-3DF8-0E96-9BA94B7E5311}.Release|Win32.ActiveCfg = Release|Win32
+		{30B1C1E6-5EE1-3DF8-0E96-9BA94B7E5311}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
