@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "video_view_openni", "video_view_openni.vcxproj", "{CB0494DB-BAAC-E26B-C1CB-5160ECF0DDDB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CB0494DB-BAAC-E26B-C1CB-5160ECF0DDDB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CB0494DB-BAAC-E26B-C1CB-5160ECF0DDDB}.Debug|Win32.Build.0 = Debug|Win32
+		{CB0494DB-BAAC-E26B-C1CB-5160ECF0DDDB}.Release|Win32.ActiveCfg = Release|Win32
+		{CB0494DB-BAAC-E26B-C1CB-5160ECF0DDDB}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
