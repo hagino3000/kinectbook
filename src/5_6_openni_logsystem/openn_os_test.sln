@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "openn_os_test", "openn_os_test.vcxproj", "{9CB28B74-0DAA-CB6A-681D-2C2EEB1FF1A8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9CB28B74-0DAA-CB6A-681D-2C2EEB1FF1A8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9CB28B74-0DAA-CB6A-681D-2C2EEB1FF1A8}.Debug|Win32.Build.0 = Debug|Win32
+		{9CB28B74-0DAA-CB6A-681D-2C2EEB1FF1A8}.Release|Win32.ActiveCfg = Release|Win32
+		{9CB28B74-0DAA-CB6A-681D-2C2EEB1FF1A8}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
