@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\addons\ofxVectorMath\src\ofxQuaternion.cpp">
+      <Filter>addons\ofxVectorMath\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxVectorMath\src\ofxMatrix4x4.cpp">
+      <Filter>addons\ofxVectorMath\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOpenCv\src\ofxCvColorImage.cpp">
+      <Filter>addons\ofxOpenCV\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOpenCv\src\ofxCvContourFinder.cpp">
+      <Filter>addons\ofxOpenCV\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOpenCv\src\ofxCvFloatImage.cpp">
+      <Filter>addons\ofxOpenCV\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOpenCv\src\ofxCvGrayscaleImage.cpp">
+      <Filter>addons\ofxOpenCV\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOpenCv\src\ofxCvImage.cpp">
+      <Filter>addons\ofxOpenCV\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOpenCv\src\ofxCvShortImage.cpp">
+      <Filter>addons\ofxOpenCV\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxThread\src\ofxThread.cpp">
+      <Filter>addons\ofxThread\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="ofxKinect_win\src\ofxKinect.cpp">
+      <Filter>addons\ofxKinect</Filter>
+    </ClCompile>
+    <ClCompile Include="ofxKinect_win\src\ofxKinectCalibration.cpp">
+      <Filter>addons\ofxKinect</Filter>
+    </ClCompile>
+    <ClCompile Include="ofxKinect_win\src\ofxKinectPlayer.cpp">
+      <Filter>addons\ofxKinect</Filter>
+    </ClCompile>
+    <ClCompile Include="ofxKinect_win\src\ofxKinectRecorder.cpp">
+      <Filter>addons\ofxKinect</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxKinectSample.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\addons\ofxVectorMath\src\ofxVectorMath.h">
+      <Filter>addons\ofxVectorMath\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxVectorMath\src\ofxVec2f.h">
+      <Filter>addons\ofxVectorMath\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxVectorMath\src\ofxVec3f.h">
+      <Filter>addons\ofxVectorMath\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxVectorMath\src\ofxVec4f.h">
+      <Filter>addons\ofxVectorMath\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxVectorMath\src\ofxQuaternion.h">
+      <Filter>addons\ofxVectorMath\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxVectorMath\src\ofxPoint2f.h">
+      <Filter>addons\ofxVectorMath\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxVectorMath\src\ofxPoint3f.h">
+      <Filter>addons\ofxVectorMath\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxVectorMath\src\ofxPoint4f.h">
+      <Filter>addons\ofxVectorMath\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxVectorMath\src\ofxMatrix4x4.h">
+      <Filter>addons\ofxVectorMath\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxVectorMath\src\ofxMatrix3x3.h">
+      <Filter>addons\ofxVectorMath\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvBlob.h">
+      <Filter>addons\ofxOpenCV\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvShortImage.h">
+      <Filter>addons\ofxOpenCV\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvColorImage.h">
+      <Filter>addons\ofxOpenCV\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvConstants.h">
+      <Filter>addons\ofxOpenCV\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvContourFinder.h">
+      <Filter>addons\ofxOpenCV\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvFloatImage.h">
+      <Filter>addons\ofxOpenCV\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvGrayscaleImage.h">
+      <Filter>addons\ofxOpenCV\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvImage.h">
+      <Filter>addons\ofxOpenCV\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvMain.h">
+      <Filter>addons\ofxOpenCV\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxOpenCv.h">
+      <Filter>addons\ofxOpenCV\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxThread\src\ofxThread.h">
+      <Filter>addons\ofxThread\src</Filter>
+    </ClInclude>
+    <ClInclude Include="ofxKinect_win\src\ofxBase3DVideo.h">
+      <Filter>addons\ofxKinect</Filter>
+    </ClInclude>
+    <ClInclude Include="ofxKinect_win\src\ofxKinect.h">
+      <Filter>addons\ofxKinect</Filter>
+    </ClInclude>
+    <ClInclude Include="ofxKinect_win\src\ofxKinectCalibration.h">
+      <Filter>addons\ofxKinect</Filter>
+    </ClInclude>
+    <ClInclude Include="ofxKinect_win\src\ofxKinectPlayer.h">
+      <Filter>addons\ofxKinect</Filter>
+    </ClInclude>
+    <ClInclude Include="ofxKinect_win\src\ofxKinectRecorder.h">
+      <Filter>addons\ofxKinect</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxKinectSample.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="addons">
+      <UniqueIdentifier>{fb9e352c-c0b7-4a51-8394-a95887d8e1e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOpenCV">
+      <UniqueIdentifier>{d6eac2d3-90b8-45fa-ba9a-e2c34eea2695}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxThread">
+      <UniqueIdentifier>{fd0ba1f5-3d69-410d-a327-045a621be259}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxVectorMath">
+      <UniqueIdentifier>{2c03225a-cf08-4d13-ba48-1533b3414c87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxVectorMath\src">
+      <UniqueIdentifier>{7dde5853-e676-44eb-84d2-4a6729cc9f8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOpenCV\src">
+      <UniqueIdentifier>{6edcfb1c-6e19-4657-9a6a-ee5ff2cf563f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxThread\src">
+      <UniqueIdentifier>{711b4f9c-c305-4310-be1b-42b122e43ef0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxKinect">
+      <UniqueIdentifier>{4f1b0713-6b7d-4cb2-95e4-df79f3c2ec90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data">
+      <UniqueIdentifier>{496786cc-2fb2-41df-81c0-c99bd40d8179}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\data\Courier New.ttf">
+      <Filter>data</Filter>
+    </None>
+  </ItemGroup>
+</Project>
