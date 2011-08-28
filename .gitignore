@@ -38,3 +38,5 @@ build
 project.xcworkspace
 xcuserdata
 .svn
+ipch/
+
