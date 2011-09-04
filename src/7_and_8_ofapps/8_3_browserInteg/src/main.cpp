@@ -1,5 +1,5 @@
 #include "ofMain.h"
-#include "kinectWeb.h"
+#include "kinectweb.h"
 #include "ofAppGlutWindow.h"
 
 //========================================================================

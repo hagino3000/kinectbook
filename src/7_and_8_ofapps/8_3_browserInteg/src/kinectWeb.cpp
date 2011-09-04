@@ -1,4 +1,4 @@
-#include "kinectWeb.h"
+#include "kinectweb.h"
 
 // ZMQ Sokcet
 zmq::context_t ctx (1);
@@ -57,32 +57,32 @@ XN_THREAD_PROC workerThread(XN_THREAD_PARAM) {
 				savedFileNames.pop();
 			}
 			replyStr << "]}";
-
+            
 		} else if (clientRequest.find("UP_ANGLE", 0) != string::npos) {
 			
 			// チルト角を増やす
-			#ifdef TARGET_OSX
+#ifdef TARGET_OSX
 			tiltAngle = min(++tiltAngle, 30);
 			hardware.setTiltAngle(tiltAngle);
-			#endif
+#endif
 			
 			// 現在の角度をレスポンスとして返す
 			replyStr << "{\"type\":\"tilt\",\"angle\":" 
-					 << tiltAngle 
-			         << "}";			
+            << tiltAngle 
+            << "}";			
 			
 		} else if (clientRequest.find("DOWN_ANGLE", 0) != string::npos) {
 			
 			// チルト角を減らす
-			#ifdef TARGET_OSX
+#ifdef TARGET_OSX
 			tiltAngle = max(--tiltAngle, -30);
 			hardware.setTiltAngle(tiltAngle);
-			#endif
+#endif
 			
 			// 現在の角度をレスポンスとして返す
 			replyStr << "{\"type\":\"tilt\",\"angle\":" 
-			         << tiltAngle 
-			         << "}";
+            << tiltAngle 
+            << "}";
 			
 		} else {
 			// 未知のイベント
@@ -99,7 +99,7 @@ XN_THREAD_PROC workerThread(XN_THREAD_PARAM) {
 void kinectWeb::setup() {
 	ofSetLogLevel(OF_LOG_VERBOSE);
 	ofLog(OF_LOG_VERBOSE, "Start setup()");
-
+    
 	// 画面の初期化
 	ofSetFrameRate(30);
     ofBackground(255, 255, 255);
@@ -119,7 +119,7 @@ void kinectWeb::setup() {
 	hardware.setup();
 	hardware.setLedOption(LED_BLINK_GREEN);
 #endif
-		
+    
 	// メモリ確保
 	grayPixels = new unsigned char[640 * 480];
 	xnOSMemSet(grayPixels, 0, 640 * 480 * sizeof(unsigned char));
@@ -134,7 +134,6 @@ void kinectWeb::setup() {
 	}
 	
 	// 通信用ワーカースレッドの作成
-	XN_THREAD_HANDLE threadHandle;
 	XnStatus rc = xnOSCreateThread(workerThread, 
 								   (XN_THREAD_PARAM)NULL, 
 								   &threadHandle); 
@@ -154,13 +153,13 @@ void kinectWeb::update(){
 	depthGenerator.update();
 	imageGenerator.update();
 	userGenerator.update();
-		
+    
 	// ユーザーマスクの取得
 	userMask.setFromPixels(userGenerator.getUserPixels(), 
 						   userGenerator.getWidth(), 
 						   userGenerator.getHeight(), 
 						   OF_IMAGE_GRAYSCALE);	
-
+    
 	// 生のDepthGeneratorから深度情報を取得する
 	xn::DepthGenerator& xnDGen = depthGenerator.getXnDepthGenerator();
 	xn::DepthMetaData depthMetaData;
@@ -174,7 +173,7 @@ void kinectWeb::update(){
 		// 5000mm -> 255
 		grayPixels[pos] = min(255, (int)(*depthPixels * 255 / 5000));
 	}
-		
+    
 	// ユーザー検出中の場合、15フレームに一度画像を保存する
 	if (userGenerator.getNumberOfTrackedUsers() > 0 && 
 		ofGetFrameNum() % 15 == 0) {
@@ -198,22 +197,21 @@ void kinectWeb::draw(){
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE);		
 	imageGenerator.draw(0, 0, 640, 480);
 	glDisable(GL_BLEND);
+    
 	
 	// 検出ユーザー数の表示
 	stringstream info;
 	info << "Traking Users:" 
-	     << userGenerator.getNumberOfTrackedUsers() 
-	     << endl;
+    << userGenerator.getNumberOfTrackedUsers() 
+    << endl;
 	ofDrawBitmapString(info.str(), 20, 20);
 }
 
 void kinectWeb::exit() {
 	// 終了処理
-	clients.close();
-	context.shutdown();
-#ifdef TARGET_OSX
-	hardware.shutDown();
-#endif
+    clients.close();
+    xnOSCloseThread(&threadHandle);
+    context.shutdown();
 	ofLog(OF_LOG_NOTICE, "End Application");
 }
 

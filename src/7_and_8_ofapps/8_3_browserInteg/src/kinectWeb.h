@@ -13,11 +13,13 @@ public:
 	void update();
 	void draw();
 	void exit();
-		
+    
 	ofxOpenNIContext	context;
 	ofxDepthGenerator	depthGenerator;	
 	ofxImageGenerator	imageGenerator; 
 	ofxUserGenerator	userGenerator;	
+    
+    XN_THREAD_HANDLE    threadHandle;
 	
 	ofImage				userMask, saveImage;
 };
