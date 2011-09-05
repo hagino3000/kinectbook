@@ -2,13 +2,14 @@
 Kinect Hackers Manual Support Page
 ==================================
 
+補足説明と正誤表はこちら `http://hagino3000.github.com/kinectbook/ <http://hagino3000.github.com/kinectbook/>`_
+
 現在は次のOSで動作確認を行なっています。
 
 - MacOS X 10.6 (Snow leoperd) + Xcode3.2.5
+- MacOS X 10.7 (Lion) + Xcode 4.1
 - Windows 7 (32bit)
 
-現状MacOS lion + Xcode4.1でopenFrameworks使っているサンプルが動作しません。
-修正ができ次第MacOS lion用のプロジェクトファイルをアップします。
 
 
 注意:
